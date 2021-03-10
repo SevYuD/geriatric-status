@@ -19,53 +19,49 @@ namespace Geriatric_Status
 
         }
 
+        //Проверка оценок устойчивости и хотьбы на заполненность
+        private void checkMotorActivity()
+        {
+            if (Program.patient.WalkViolationPassed  && Program.patient.OverallResiliencePassed)
+            {
+                int sum = Program.patient.WalkViolation + Program.patient.OverallResilience;
+                Program.patient.MotorActivitySum = sum;
+                MessageBox.Show("Оценка двигательной активности: " + sum + " баллов");
+                //Уточнить
+                if (sum > 38)
+                    Program.patient.MotorActivity = 1;
+                else
+                    Program.patient.MotorActivity = 0;
+            }
+        }
+
         private void Main_Load(object sender, EventArgs e)
         {
             Program.patient = new Patient();
-            Patient patient = Program.patient;
+            //Изначально все лайоуты скрыты
             OverallResilience.Hide();
+            WalkViolation.Hide();
         }
 
         private void NewPatientButton_Click(object sender, EventArgs e)
         {
-            Patient patient = Program.patient;
+            //Вызов окна создания нового пациента
             NewPatient np = new NewPatient();
             np.ShowDialog();
-            patientDataLabel.Text = patient.Surname + " " + patient.Name + " " + patient.Otchestvo + " " + patient.BirthDate.ToShortDateString();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
+            patientDataLabel.Text = Program.patient.Surname + " " + Program.patient.Name + " " + Program.patient.Otchestvo + " " + Program.patient.BirthDate.ToShortDateString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OverallResilience.Show();
+            //Проверка, чтобы лайоут не открывался повторно
+            if(OverallResilience.Visible == false)
+                OverallResilience.Show();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        //Расчет устойчивости
         private void ORButton_Click(object sender, EventArgs e)
         {
+            //Проверка всех комбобоксов на заполненность
             if(comboBox1.SelectedIndex > -1 &&
                 comboBox2.SelectedIndex > -1 &&
                 comboBox3.SelectedIndex > -1 &&
@@ -84,6 +80,7 @@ namespace Geriatric_Status
             {
                 OverallResilience.Hide();
 
+                //Расчет суммы баллов
                 Program.patient.OverallResilience =
                     comboBox1.SelectedIndex +
                     comboBox2.SelectedIndex +
@@ -100,8 +97,55 @@ namespace Geriatric_Status
                     comboBox13.SelectedIndex +
                     comboBox14.SelectedIndex +
                     comboBox15.SelectedIndex;
-
+                Program.patient.OverallResiliencePassed = true;
                 MessageBox.Show("Набрано баллов: " + Program.patient.OverallResilience);
+                checkMotorActivity();
+            }
+            else
+            {
+                MessageBox.Show("Не все параметры выбраны!");
+            }
+        }
+
+        private void WVButton_Click(object sender, EventArgs e)
+        {
+            if(WalkViolation.Visible == false)
+                WalkViolation.Show();
+        }
+
+        private void WVSaveButton_Click(object sender, EventArgs e)
+        {
+            if (comboBox19.SelectedIndex > -1 &&
+                comboBox20.SelectedIndex > -1 &&
+                comboBox21.SelectedIndex > -1 &&
+                comboBox22.SelectedIndex > -1 &&
+                comboBox23.SelectedIndex > -1 &&
+                comboBox24.SelectedIndex > -1 &&
+                comboBox25.SelectedIndex > -1 &&
+                comboBox26.SelectedIndex > -1 &&
+                comboBox27.SelectedIndex > -1 &&
+                comboBox28.SelectedIndex > -1 &&
+                comboBox29.SelectedIndex > -1 &&
+                comboBox30.SelectedIndex > -1   )
+            {
+                WalkViolation.Hide();
+
+                Program.patient.WalkViolation =
+                    comboBox19.SelectedIndex +
+                    comboBox20.SelectedIndex +
+                    comboBox21.SelectedIndex +
+                    comboBox22.SelectedIndex +
+                    comboBox23.SelectedIndex +
+                    comboBox24.SelectedIndex +
+                    comboBox25.SelectedIndex +
+                    comboBox26.SelectedIndex +
+                    comboBox27.SelectedIndex +
+                    comboBox28.SelectedIndex +
+                    comboBox29.SelectedIndex +
+                    comboBox30.SelectedIndex;
+                Program.patient.WalkViolationPassed = true;
+                checkMotorActivity();
+                MessageBox.Show("Набрано баллов: " + Program.patient.WalkViolation);
             }
             else
             {

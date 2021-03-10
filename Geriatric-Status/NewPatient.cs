@@ -21,12 +21,14 @@ namespace Geriatric_Status
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            //Проверяем чтобы данные были не пустые
             if (FTextBox.Text == "" && NTextBox.Text == "" && OTextBox.Text == "")
             {
                 MessageBox.Show("Пустые поля!");
             }
             else
             {
+                //Сохраняем значения
                 Program.patient.Name = NTextBox.Text;
                 Program.patient.Surname = FTextBox.Text;
                 Program.patient.Otchestvo = FTextBox.Text;

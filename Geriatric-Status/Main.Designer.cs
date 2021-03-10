@@ -32,6 +32,33 @@ namespace Geriatric_Status
             this.NewPatientButton = new System.Windows.Forms.Button();
             this.patientDataLabel = new System.Windows.Forms.Label();
             this.OverallResilience = new System.Windows.Forms.Panel();
+            this.WalkViolation = new System.Windows.Forms.Panel();
+            this.WVSaveButton = new System.Windows.Forms.Button();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.comboBox25 = new System.Windows.Forms.ComboBox();
+            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.ORSaveButton = new System.Windows.Forms.Button();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
@@ -63,9 +90,10 @@ namespace Geriatric_Status
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.ORButton = new System.Windows.Forms.Button();
+            this.WVButton = new System.Windows.Forms.Button();
             this.OverallResilience.SuspendLayout();
+            this.WalkViolation.SuspendLayout();
             this.SuspendLayout();
             // 
             // NewPatientButton
@@ -89,7 +117,7 @@ namespace Geriatric_Status
             // 
             // OverallResilience
             // 
-            this.OverallResilience.Controls.Add(this.ORButton);
+            this.OverallResilience.Controls.Add(this.ORSaveButton);
             this.OverallResilience.Controls.Add(this.comboBox15);
             this.OverallResilience.Controls.Add(this.comboBox14);
             this.OverallResilience.Controls.Add(this.comboBox13);
@@ -124,6 +152,322 @@ namespace Geriatric_Status
             this.OverallResilience.Name = "OverallResilience";
             this.OverallResilience.Size = new System.Drawing.Size(698, 629);
             this.OverallResilience.TabIndex = 3;
+            // 
+            // WalkViolation
+            // 
+            this.WalkViolation.Controls.Add(this.WVSaveButton);
+            this.WalkViolation.Controls.Add(this.comboBox19);
+            this.WalkViolation.Controls.Add(this.comboBox20);
+            this.WalkViolation.Controls.Add(this.comboBox21);
+            this.WalkViolation.Controls.Add(this.comboBox22);
+            this.WalkViolation.Controls.Add(this.comboBox23);
+            this.WalkViolation.Controls.Add(this.comboBox24);
+            this.WalkViolation.Controls.Add(this.comboBox25);
+            this.WalkViolation.Controls.Add(this.comboBox26);
+            this.WalkViolation.Controls.Add(this.comboBox27);
+            this.WalkViolation.Controls.Add(this.comboBox28);
+            this.WalkViolation.Controls.Add(this.comboBox29);
+            this.WalkViolation.Controls.Add(this.comboBox30);
+            this.WalkViolation.Controls.Add(this.label18);
+            this.WalkViolation.Controls.Add(this.label19);
+            this.WalkViolation.Controls.Add(this.label20);
+            this.WalkViolation.Controls.Add(this.label21);
+            this.WalkViolation.Controls.Add(this.label22);
+            this.WalkViolation.Controls.Add(this.label24);
+            this.WalkViolation.Controls.Add(this.label26);
+            this.WalkViolation.Controls.Add(this.label27);
+            this.WalkViolation.Controls.Add(this.label28);
+            this.WalkViolation.Controls.Add(this.label29);
+            this.WalkViolation.Controls.Add(this.label30);
+            this.WalkViolation.Controls.Add(this.label31);
+            this.WalkViolation.Location = new System.Drawing.Point(411, 6);
+            this.WalkViolation.Name = "WalkViolation";
+            this.WalkViolation.Size = new System.Drawing.Size(698, 629);
+            this.WalkViolation.TabIndex = 31;
+            // 
+            // WVSaveButton
+            // 
+            this.WVSaveButton.Location = new System.Drawing.Point(19, 384);
+            this.WVSaveButton.Name = "WVSaveButton";
+            this.WVSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.WVSaveButton.TabIndex = 30;
+            this.WVSaveButton.Text = "Сохранить";
+            this.WVSaveButton.UseVisualStyleBackColor = true;
+            this.WVSaveButton.Click += new System.EventHandler(this.WVSaveButton_Click);
+            // 
+            // comboBox19
+            // 
+            this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox19.Location = new System.Drawing.Point(228, 340);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(158, 23);
+            this.comboBox19.TabIndex = 26;
+            // 
+            // comboBox20
+            // 
+            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox20.Location = new System.Drawing.Point(228, 310);
+            this.comboBox20.Name = "comboBox20";
+            this.comboBox20.Size = new System.Drawing.Size(158, 23);
+            this.comboBox20.TabIndex = 25;
+            // 
+            // comboBox21
+            // 
+            this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox21.FormattingEnabled = true;
+            this.comboBox21.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox21.Location = new System.Drawing.Point(228, 280);
+            this.comboBox21.Name = "comboBox21";
+            this.comboBox21.Size = new System.Drawing.Size(158, 23);
+            this.comboBox21.TabIndex = 24;
+            // 
+            // comboBox22
+            // 
+            this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox22.FormattingEnabled = true;
+            this.comboBox22.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox22.Location = new System.Drawing.Point(228, 250);
+            this.comboBox22.Name = "comboBox22";
+            this.comboBox22.Size = new System.Drawing.Size(158, 23);
+            this.comboBox22.TabIndex = 23;
+            // 
+            // comboBox23
+            // 
+            this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox23.FormattingEnabled = true;
+            this.comboBox23.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox23.Location = new System.Drawing.Point(228, 220);
+            this.comboBox23.Name = "comboBox23";
+            this.comboBox23.Size = new System.Drawing.Size(158, 23);
+            this.comboBox23.TabIndex = 22;
+            // 
+            // comboBox24
+            // 
+            this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox24.FormattingEnabled = true;
+            this.comboBox24.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox24.Location = new System.Drawing.Point(228, 190);
+            this.comboBox24.Name = "comboBox24";
+            this.comboBox24.Size = new System.Drawing.Size(158, 23);
+            this.comboBox24.TabIndex = 21;
+            // 
+            // comboBox25
+            // 
+            this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox25.FormattingEnabled = true;
+            this.comboBox25.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox25.Location = new System.Drawing.Point(228, 160);
+            this.comboBox25.Name = "comboBox25";
+            this.comboBox25.Size = new System.Drawing.Size(158, 23);
+            this.comboBox25.TabIndex = 20;
+            // 
+            // comboBox26
+            // 
+            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox26.FormattingEnabled = true;
+            this.comboBox26.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox26.Location = new System.Drawing.Point(228, 130);
+            this.comboBox26.Name = "comboBox26";
+            this.comboBox26.Size = new System.Drawing.Size(158, 23);
+            this.comboBox26.TabIndex = 19;
+            // 
+            // comboBox27
+            // 
+            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox27.FormattingEnabled = true;
+            this.comboBox27.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox27.Location = new System.Drawing.Point(228, 102);
+            this.comboBox27.Name = "comboBox27";
+            this.comboBox27.Size = new System.Drawing.Size(158, 23);
+            this.comboBox27.TabIndex = 18;
+            // 
+            // comboBox28
+            // 
+            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox28.Location = new System.Drawing.Point(228, 72);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(158, 23);
+            this.comboBox28.TabIndex = 17;
+            // 
+            // comboBox29
+            // 
+            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox29.Location = new System.Drawing.Point(228, 42);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(158, 23);
+            this.comboBox29.TabIndex = 16;
+            // 
+            // comboBox30
+            // 
+            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox30.FormattingEnabled = true;
+            this.comboBox30.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.comboBox30.Location = new System.Drawing.Point(228, 12);
+            this.comboBox30.Name = "comboBox30";
+            this.comboBox30.Size = new System.Drawing.Size(158, 23);
+            this.comboBox30.TabIndex = 15;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(19, 200);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(147, 15);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Устойчивость при хотьбе";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(19, 350);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(165, 15);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "Высота шага для левой ноги";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(19, 290);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(209, 15);
+            this.label20.TabIndex = 11;
+            this.label20.Text = "Произвольное уведичение скорости";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(19, 110);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(138, 15);
+            this.label21.TabIndex = 10;
+            this.label21.Text = "Длина шага левой ноги";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(19, 170);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(184, 15);
+            this.label22.TabIndex = 9;
+            this.label22.Text = "Отклонение от линии движения";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(19, 230);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(185, 15);
+            this.label24.TabIndex = 7;
+            this.label24.Text = "Степень покачивания туловища";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(19, 320);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(172, 15);
+            this.label26.TabIndex = 5;
+            this.label26.Text = "Высота шага для правой ноги";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(19, 260);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(64, 15);
+            this.label27.TabIndex = 4;
+            this.label27.Text = "Повороты";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(19, 140);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(145, 15);
+            this.label28.TabIndex = 3;
+            this.label28.Text = "Длина шага правой ноги";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(19, 80);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(138, 15);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "Непрерывность хотьбы";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(19, 50);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(134, 15);
+            this.label30.TabIndex = 1;
+            this.label30.Text = "Симметричность шага";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(19, 20);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(106, 15);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "Начало движения";
+            // 
+            // ORSaveButton
+            // 
+            this.ORSaveButton.Location = new System.Drawing.Point(19, 486);
+            this.ORSaveButton.Name = "ORSaveButton";
+            this.ORSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.ORSaveButton.TabIndex = 30;
+            this.ORSaveButton.Text = "Сохранить";
+            this.ORSaveButton.UseVisualStyleBackColor = true;
+            this.ORSaveButton.Click += new System.EventHandler(this.ORButton_Click);
             // 
             // comboBox15
             // 
@@ -319,7 +663,6 @@ namespace Geriatric_Status
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(158, 23);
             this.comboBox1.TabIndex = 15;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -356,7 +699,6 @@ namespace Geriatric_Status
             this.label12.Size = new System.Drawing.Size(190, 15);
             this.label12.TabIndex = 11;
             this.label12.Text = "Стояние на левой ноге (5 секунд)";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -466,32 +808,34 @@ namespace Geriatric_Status
             this.label16.TabIndex = 4;
             this.label16.Text = "Тест";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(21, 167);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(311, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Характеристика параметров устойчивости";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // ORButton
             // 
-            this.ORButton.Location = new System.Drawing.Point(19, 486);
+            this.ORButton.Location = new System.Drawing.Point(21, 167);
             this.ORButton.Name = "ORButton";
-            this.ORButton.Size = new System.Drawing.Size(75, 23);
-            this.ORButton.TabIndex = 30;
-            this.ORButton.Text = "Сохранить";
+            this.ORButton.Size = new System.Drawing.Size(311, 23);
+            this.ORButton.TabIndex = 5;
+            this.ORButton.Text = "Характеристика параметров устойчивости";
             this.ORButton.UseVisualStyleBackColor = true;
-            this.ORButton.Click += new System.EventHandler(this.ORButton_Click);
+            this.ORButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // WVButton
+            // 
+            this.WVButton.Location = new System.Drawing.Point(21, 215);
+            this.WVButton.Name = "WVButton";
+            this.WVButton.Size = new System.Drawing.Size(311, 23);
+            this.WVButton.TabIndex = 6;
+            this.WVButton.Text = " Степень нарушения походки";
+            this.WVButton.UseVisualStyleBackColor = true;
+            this.WVButton.Click += new System.EventHandler(this.WVButton_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 647);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.WalkViolation);
+            this.Controls.Add(this.WVButton);
+            this.Controls.Add(this.ORButton);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.OverallResilience);
             this.Controls.Add(this.patientDataLabel);
@@ -502,6 +846,8 @@ namespace Geriatric_Status
             this.Load += new System.EventHandler(this.Main_Load);
             this.OverallResilience.ResumeLayout(false);
             this.OverallResilience.PerformLayout();
+            this.WalkViolation.ResumeLayout(false);
+            this.WalkViolation.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,7 +874,7 @@ namespace Geriatric_Status
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ORButton;
         private System.Windows.Forms.ComboBox comboBox15;
         private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.ComboBox comboBox13;
@@ -543,8 +889,34 @@ namespace Geriatric_Status
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button OC;
-        private System.Windows.Forms.Button ORButton;
+        private System.Windows.Forms.Button ORSaveButton;
+        private System.Windows.Forms.Panel WalkViolation;
+        private System.Windows.Forms.Button WVSaveButton;
+        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox comboBox20;
+        private System.Windows.Forms.ComboBox comboBox21;
+        private System.Windows.Forms.ComboBox comboBox22;
+        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.ComboBox comboBox25;
+        private System.Windows.Forms.ComboBox comboBox26;
+        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Button WVButton;
     }
 }
 
