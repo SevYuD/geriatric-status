@@ -143,6 +143,7 @@ namespace Geriatric_Status
             this.Name = "NewPatient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Новый пациент";
+            this.Load += new System.EventHandler(this.NewPatient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

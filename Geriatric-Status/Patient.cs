@@ -10,75 +10,22 @@ namespace Geriatric_Status
     {
         private DateTime birthDate;
 
-        private string name = "";
+        private string name;
 
-        private string surname = "";
+        private string surname;
 
-        private string otchestvo = "";
+        private string otchestvo;
 
-        public DateTime BirthDate
-        {
-            get
-            {
-                return birthDate;
-            }
+        private int overallResilience;
 
-            set
-            {
-                birthDate = value;
-            }
-        }
+        public DateTime BirthDate { get => birthDate; set => birthDate = value; }
+        public string Name { get => name; set => name = value; }
+        public string Surname { get => surname; set => surname = value; }
+        public string Otchestvo { get => otchestvo; set => otchestvo = value; }
+        public int OverallResilience { get => overallResilience; set => overallResilience = value; }
 
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
+        
 
-            set
-            {
-                name = value;
-            }
-        }
-
-
-        public string Surname
-        {
-            get
-            {
-                return surname;
-            }
-
-            set
-            {
-                surname = value;
-            }
-        }
-
-        public string Otchestvo
-        {
-            get
-            {
-                return otchestvo;
-            }
-
-            set
-            {
-                otchestvo = value;
-            }
-        }
-
-
-
-
-       /* public Patient(DateTime date, string name, string surname, string otchestvo)
-        {
-            this.birthDate = date;
-            this.name = name;
-            this.surname = surname;
-            this.otchestvo = otchestvo;
-        }*/
 
 
     }

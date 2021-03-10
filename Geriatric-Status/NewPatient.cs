@@ -40,5 +40,10 @@ namespace Geriatric_Status
         {
             this.Close();
         }
+
+        private void NewPatient_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
