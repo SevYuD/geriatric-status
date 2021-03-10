@@ -8,15 +8,77 @@ namespace Geriatric_Status
 {
     class Patient
     {
-        public static DateTime date;
+        private DateTime birthDate;
 
-        public static string name = "";
+        private string name = "";
 
-        public static string surname = "";
+        private string surname = "";
 
-        public static string otchestvo = "";
+        private string otchestvo = "";
 
-        
+        public DateTime BirthDate
+        {
+            get
+            {
+                return birthDate;
+            }
+
+            set
+            {
+                birthDate = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+
+
+        public string Surname
+        {
+            get
+            {
+                return surname;
+            }
+
+            set
+            {
+                surname = value;
+            }
+        }
+
+        public string Otchestvo
+        {
+            get
+            {
+                return otchestvo;
+            }
+
+            set
+            {
+                otchestvo = value;
+            }
+        }
+
+
+
+
+       /* public Patient(DateTime date, string name, string surname, string otchestvo)
+        {
+            this.birthDate = date;
+            this.name = name;
+            this.surname = surname;
+            this.otchestvo = otchestvo;
+        }*/
 
 
     }

@@ -27,7 +27,12 @@ namespace Geriatric_Status
             }
             else
             {
-                //Program.patient = new Patient(dateTimePicker1.Value, NTextBox.Text, FTextBox.Text, OTextBox.Text);
+                Program.patient.Name = NTextBox.Text;
+                Program.patient.Surname = FTextBox.Text;
+                Program.patient.Otchestvo = FTextBox.Text;
+                Program.patient.BirthDate = dateTimePicker1.Value;
+                this.Close();
+
             }
         }
 

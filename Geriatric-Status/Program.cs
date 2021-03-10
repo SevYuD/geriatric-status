@@ -7,7 +7,9 @@ using System.Windows.Forms;
 namespace Geriatric_Status
 {
     static class Program
-    { 
+    {
+        public static Patient patient;
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

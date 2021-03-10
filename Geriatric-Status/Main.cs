@@ -21,13 +21,17 @@ namespace Geriatric_Status
 
         private void Main_Load(object sender, EventArgs e)
         {
-          
+            Program.patient = new Patient();
+            label1.Text = Program.patient.Name;
         }
 
         private void NewPatientButton_Click(object sender, EventArgs e)
         {
+           //this.Hide();
             NewPatient np = new NewPatient();
-            np.Show();
+            np.ShowDialog();
+            label1.Text = Program.patient.Name;
+            //this.Show();
         }
     }
 }
