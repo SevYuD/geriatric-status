@@ -45,6 +45,7 @@ namespace Geriatric_Status
             OverallResilience.Hide();
             WalkViolation.Hide();
             MalnutriciaPart1.Hide();
+            MalnutriciaPart2.Hide();
         }
 
         private void NewPatientButton_Click(object sender, EventArgs e)
@@ -181,7 +182,7 @@ namespace Geriatric_Status
                mcb2.SelectedIndex > -1 &&
                mcb1.SelectedIndex > -1)
             {
-                WalkViolation.Hide();
+                MalnutriciaPart1.Hide();
 
                 Program.patient.WalkViolation =
                     mcb6.SelectedIndex +
@@ -191,7 +192,53 @@ namespace Geriatric_Status
                     mcb2.SelectedIndex +
                     mcb1.SelectedIndex;
 
-                MalnutriciaPart1.Hide();
+
+                MessageBox.Show("Набрано баллов: " + Program.patient.Malnutrition1);
+
+                checkMotorActivity();
+            }
+            else
+            {
+                MessageBox.Show("Не все параметры выбраны!");
+            }
+        }
+
+        private void M2Button_Click(object sender, EventArgs e)
+        {
+            if (MalnutriciaPart2.Visible == false)
+                MalnutriciaPart2.Show();
+        }
+
+        private void M2SaveButton_Click(object sender, EventArgs e)
+        {
+            if (wvcb12.SelectedIndex > -1 &&
+               m2cb11.SelectedIndex > -1 &&
+               m2cb10.SelectedIndex > -1 &&
+               m2cb9.SelectedIndex > -1 &&
+               m2cb8.SelectedIndex > -1 &&
+               m2cb7.SelectedIndex > -1 &&
+               m2cb6.SelectedIndex > -1 &&
+               m2cb5.SelectedIndex > -1 &&
+               m2cb4.SelectedIndex > -1 &&
+               m2cb3.SelectedIndex > -1 &&
+               m2cb2.SelectedIndex > -1 &&
+               m2cb1.SelectedIndex > -1)
+            {
+                WalkViolation.Hide();
+
+                Program.patient.WalkViolation =
+                    m2cb12.SelectedIndex +
+                    wvcb11.SelectedIndex +
+                    wvcb10.SelectedIndex +
+                    wvcb9.SelectedIndex +
+                    m2cb8.SelectedIndex +
+                    m2cb7.SelectedIndex +
+                    m2cb6.SelectedIndex/2 +
+                    m2cb5.SelectedIndex +
+                    m2cb4.SelectedIndex +
+                    m2cb3.SelectedIndex +
+                    m2cb2.SelectedIndex +
+                    m2cb1.SelectedIndex;
                 Program.patient.WalkViolationPassed = true;
 
                 MessageBox.Show("Набрано баллов: " + Program.patient.WalkViolation);
