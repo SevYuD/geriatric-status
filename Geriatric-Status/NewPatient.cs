@@ -29,6 +29,7 @@ namespace Geriatric_Status
             else
             {
                 //Сохраняем значения
+                Program.patient = new Patient();
                 Program.patient.Name = NTextBox.Text;
                 Program.patient.Surname = FTextBox.Text;
                 Program.patient.Otchestvo = FTextBox.Text;
