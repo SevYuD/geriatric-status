@@ -40,6 +40,12 @@ namespace Geriatric_Status
 
         private byte malnutrition;
 
+        private int cognitiveBal;
+
+        private bool cognitivePassed;
+
+        private byte congnitive;
+
 
         public DateTime BirthDate { get => birthDate; set => birthDate = value; }
         public string Name { get => name; set => name = value; }
@@ -57,5 +63,8 @@ namespace Geriatric_Status
         public bool Malnutrition2Passed { get => malnutrition2Passed; set => malnutrition2Passed = value; }
         public double MalnutritionSum { get => malnutritionSum; set => malnutritionSum = value; }
         public byte Malnutrition { get => malnutrition; set => malnutrition = value; }
+        public int CognitiveBal { get => cognitiveBal; set => cognitiveBal = value; }
+        public bool CognitivePassed { get => cognitivePassed; set => cognitivePassed = value; }
+        public byte Congnitive { get => congnitive; set => congnitive = value; }
     }
 }

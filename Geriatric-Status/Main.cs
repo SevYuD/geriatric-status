@@ -47,7 +47,16 @@ namespace Geriatric_Status
             }
         }
 
-
+        private void checkCognitive()
+        {
+          
+            MessageBox.Show("Оценка когнитивных способностей: " + Program.patient.CognitiveBal + " баллов");
+            //Уточнить
+            if (Program.patient.CognitiveBal > 24)
+                Program.patient.Congnitive = 1;
+            else
+                Program.patient.Congnitive = 0;
+        }
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -61,6 +70,7 @@ namespace Geriatric_Status
             WalkViolation.Hide();
             MalnutriciaPart1.Hide();
             MalnutriciaPart2.Hide();
+            Cognitive.Hide();
         }
 
         private void NewPatientButton_Click(object sender, EventArgs e)
@@ -281,6 +291,55 @@ namespace Geriatric_Status
                 MessageBox.Show("Набрано баллов: " + Program.patient.Malnutrition2);
 
                 checkMalnutrition();
+            }
+            else
+            {
+                MessageBox.Show("Не все параметры выбраны!");
+            }
+        }
+
+        private void CButton_Click(object sender, EventArgs e)
+        {
+            if (Cognitive.Visible == false)
+                Cognitive.Show();
+        }
+
+        private void CSaveButton_Click(object sender, EventArgs e)
+        {
+            if (ccb1.SelectedIndex > -1 &&
+              ccb2.SelectedIndex > -1 &&
+              ccb3.SelectedIndex > -1 &&
+              ccb4.SelectedIndex > -1 &&
+              ccb5.SelectedIndex > -1 &&
+              ccb6.SelectedIndex > -1 &&
+              ccb7.SelectedIndex > -1 &&
+              ccb8.SelectedIndex > -1 &&
+              ccb9.SelectedIndex > -1 &&
+              ccb10.SelectedIndex > -1 &&
+              ccb11.SelectedIndex > -1)
+            {
+                Cognitive.Hide();
+
+                Program.patient.CognitiveBal =
+                    ccb1.SelectedIndex +
+                    ccb2.SelectedIndex +
+                    ccb3.SelectedIndex +
+                    ccb4.SelectedIndex +
+                    ccb5.SelectedIndex + 
+                    ccb6.SelectedIndex +
+                    ccb7.SelectedIndex + 
+                    ccb8.SelectedIndex +
+                    ccb8.SelectedIndex +
+                    ccb9.SelectedIndex;
+
+
+                //Максимальное количество очков - 33
+                if (Program.patient.CognitiveBal > 33)
+                    Program.patient.CognitiveBal = 33;
+
+                Program.patient.CognitivePassed = true;
+
+                checkCognitive();
             }
             else
             {
