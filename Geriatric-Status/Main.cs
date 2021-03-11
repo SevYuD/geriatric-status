@@ -23,16 +23,31 @@ namespace Geriatric_Status
         {
             if (Program.patient.WalkViolationPassed  && Program.patient.OverallResiliencePassed)
             {
-                int sum = Program.patient.WalkViolation + Program.patient.OverallResilience;
-                Program.patient.MotorActivitySum = sum;
-                MessageBox.Show("Оценка двигательной активности: " + sum + " баллов");
+                Program.patient.MotorActivitySum = Program.patient.WalkViolation + Program.patient.OverallResilience;
+                MessageBox.Show("Оценка двигательной активности: " + Program.patient.MotorActivitySum + " баллов");
                 //Уточнить
-                if (sum > 38)
+                if (Program.patient.MotorActivitySum > 38)
                     Program.patient.MotorActivity = 1;
                 else
                     Program.patient.MotorActivity = 0;
             }
         }
+
+        private void checkMalnutrition()
+        {
+            if(Program.patient.Malnutrition1Passed && Program.patient.Malnutrition2Passed)
+            {
+                Program.patient.MalnutritionSum = Program.patient.Malnutrition1 + Program.patient.Malnutrition2;
+                MessageBox.Show("Оценка риска развития синдрома мальнутриции: " + Program.patient.MalnutritionSum + " баллов");
+                //Уточнить
+                if (Program.patient.MalnutritionSum > 23)
+                    Program.patient.Malnutrition = 1;
+                else
+                    Program.patient.Malnutrition = 0;
+            }
+        }
+
+
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -122,6 +137,7 @@ namespace Geriatric_Status
             }
         }
 
+        //Двигательная активность
         private void WVSaveButton_Click(object sender, EventArgs e)
         {
             if (wvcb12.SelectedIndex > -1 &&
@@ -172,6 +188,7 @@ namespace Geriatric_Status
             }
         }
 
+        //Мальнутриции 1
         private void MSaveButton_Click(object sender, EventArgs e)
         {
             if (
@@ -184,7 +201,7 @@ namespace Geriatric_Status
             {
                 MalnutriciaPart1.Hide();
 
-                Program.patient.WalkViolation =
+                Program.patient.Malnutrition1 = 
                     mcb6.SelectedIndex +
                     mcb5.SelectedIndex +
                     mcb4.SelectedIndex +
@@ -192,10 +209,15 @@ namespace Geriatric_Status
                     mcb2.SelectedIndex +
                     mcb1.SelectedIndex;
 
-
+                //Максимальное количество очков - 14
+                if (Program.patient.Malnutrition1 > 14)
+                    Program.patient.Malnutrition1 = 14;
+              
                 MessageBox.Show("Набрано баллов: " + Program.patient.Malnutrition1);
 
-                checkMotorActivity();
+                Program.patient.Malnutrition1Passed = true;
+
+                checkMalnutrition();
             }
             else
             {
@@ -209,9 +231,10 @@ namespace Geriatric_Status
                 MalnutriciaPart2.Show();
         }
 
+        //Мальнутриции 2
         private void M2SaveButton_Click(object sender, EventArgs e)
         {
-            if (wvcb12.SelectedIndex > -1 &&
+            if (m2cb12.SelectedIndex > -1 &&
                m2cb11.SelectedIndex > -1 &&
                m2cb10.SelectedIndex > -1 &&
                m2cb9.SelectedIndex > -1 &&
@@ -224,26 +247,40 @@ namespace Geriatric_Status
                m2cb2.SelectedIndex > -1 &&
                m2cb1.SelectedIndex > -1)
             {
-                WalkViolation.Hide();
+                MalnutriciaPart2.Hide();
 
-                Program.patient.WalkViolation =
+                Program.patient.Malnutrition2 =
                     m2cb12.SelectedIndex +
-                    wvcb11.SelectedIndex +
-                    wvcb10.SelectedIndex +
-                    wvcb9.SelectedIndex +
+                    m2cb11.SelectedIndex/2 +
+                    m2cb10.SelectedIndex/2 +
                     m2cb8.SelectedIndex +
                     m2cb7.SelectedIndex +
-                    m2cb6.SelectedIndex/2 +
-                    m2cb5.SelectedIndex +
-                    m2cb4.SelectedIndex +
-                    m2cb3.SelectedIndex +
-                    m2cb2.SelectedIndex +
-                    m2cb1.SelectedIndex;
-                Program.patient.WalkViolationPassed = true;
+                    m2cb6.SelectedIndex/2 +  //0-3 /5
+                    m2cb5.SelectedIndex/2 + // 0- 3  |2
+                    m2cb4.SelectedIndex +  // 0- 2
+                    m2cb3.SelectedIndex + // 0 -1 
+                    m2cb2.SelectedIndex + //0 -1
+                    m2cb1.SelectedIndex; //0 - 1
 
-                MessageBox.Show("Набрано баллов: " + Program.patient.WalkViolation);
+                //Распределение очков для этого параметра  0-0.5-1-2
+                if (m2cb9.SelectedIndex == 0)
+                    Program.patient.Malnutrition2 += 0;
+                if (m2cb9.SelectedIndex == 1)
+                    Program.patient.Malnutrition2 += 0.5;
+                if (m2cb9.SelectedIndex == 2)
+                    Program.patient.Malnutrition2 += 1;
+                if (m2cb9.SelectedIndex == 3)
+                    Program.patient.Malnutrition2 += 2;
 
-                checkMotorActivity();
+                //Максимальное количество очков - 16
+                if (Program.patient.Malnutrition2 > 16)
+                    Program.patient.Malnutrition2 = 16;
+
+                Program.patient.Malnutrition2Passed = true;
+
+                MessageBox.Show("Набрано баллов: " + Program.patient.Malnutrition2);
+
+                checkMalnutrition();
             }
             else
             {

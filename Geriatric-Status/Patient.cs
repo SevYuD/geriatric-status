@@ -28,7 +28,17 @@ namespace Geriatric_Status
 
         private byte motorActivity; // Результат теста оценок устойчивости и хотьбы
 
-        private int malnutrition1; // Результат оценки риска развития синдрома мальнутриции
+        private int malnutrition1; // Результат оценки риска развития синдрома мальнутриции 1 часть
+
+        private bool malnutrition1Passed = false;
+
+        private double malnutrition2; // Результат оценки риска развития синдрома мальнутриции 2 часть
+
+        private bool malnutrition2Passed = false;
+
+        private double malnutritionSum;
+
+        private byte malnutrition;
 
 
         public DateTime BirthDate { get => birthDate; set => birthDate = value; }
@@ -42,5 +52,10 @@ namespace Geriatric_Status
         public byte MotorActivity { get => motorActivity; set => motorActivity = value; }
         public int MotorActivitySum { get => motorActivitySum; set => motorActivitySum = value; }
         public int Malnutrition1 { get => malnutrition1; set => malnutrition1 = value; }
+        public bool Malnutrition1Passed { get => malnutrition1Passed; set => malnutrition1Passed = value; }
+        public double Malnutrition2 { get => malnutrition2; set => malnutrition2 = value; }
+        public bool Malnutrition2Passed { get => malnutrition2Passed; set => malnutrition2Passed = value; }
+        public double MalnutritionSum { get => malnutritionSum; set => malnutritionSum = value; }
+        public byte Malnutrition { get => malnutrition; set => malnutrition = value; }
     }
 }

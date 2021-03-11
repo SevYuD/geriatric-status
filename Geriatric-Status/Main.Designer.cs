@@ -32,33 +32,47 @@ namespace Geriatric_Status
             this.NewPatientButton = new System.Windows.Forms.Button();
             this.patientDataLabel = new System.Windows.Forms.Label();
             this.OverallResilience = new System.Windows.Forms.Panel();
-            this.MalnutriciaPart2 = new System.Windows.Forms.Panel();
-            this.M2SaveButton = new System.Windows.Forms.Button();
-            this.m2cb12 = new System.Windows.Forms.ComboBox();
-            this.m2cb11 = new System.Windows.Forms.ComboBox();
-            this.m2cb10 = new System.Windows.Forms.ComboBox();
-            this.m2cb9 = new System.Windows.Forms.ComboBox();
-            this.m2cb8 = new System.Windows.Forms.ComboBox();
-            this.m2cb7 = new System.Windows.Forms.ComboBox();
-            this.m2cb6 = new System.Windows.Forms.ComboBox();
-            this.m2cb5 = new System.Windows.Forms.ComboBox();
-            this.m2cb4 = new System.Windows.Forms.ComboBox();
-            this.m2cb3 = new System.Windows.Forms.ComboBox();
-            this.m2cb2 = new System.Windows.Forms.ComboBox();
-            this.m2cb1 = new System.Windows.Forms.ComboBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
             this.ORSaveButton = new System.Windows.Forms.Button();
+            this.WalkViolation = new System.Windows.Forms.Panel();
+            this.MalnutriciaPart1 = new System.Windows.Forms.Panel();
+            this.MSaveButton = new System.Windows.Forms.Button();
+            this.mcb6 = new System.Windows.Forms.ComboBox();
+            this.mcb5 = new System.Windows.Forms.ComboBox();
+            this.mcb4 = new System.Windows.Forms.ComboBox();
+            this.mcb3 = new System.Windows.Forms.ComboBox();
+            this.mcb2 = new System.Windows.Forms.ComboBox();
+            this.mcb1 = new System.Windows.Forms.ComboBox();
+            this.m4 = new System.Windows.Forms.Label();
+            this.m6 = new System.Windows.Forms.Label();
+            this.m5 = new System.Windows.Forms.Label();
+            this.m3 = new System.Windows.Forms.Label();
+            this.m2 = new System.Windows.Forms.Label();
+            this.m1 = new System.Windows.Forms.Label();
+            this.WVSaveButton = new System.Windows.Forms.Button();
+            this.wvcb12 = new System.Windows.Forms.ComboBox();
+            this.wvcb11 = new System.Windows.Forms.ComboBox();
+            this.wvcb10 = new System.Windows.Forms.ComboBox();
+            this.wvcb9 = new System.Windows.Forms.ComboBox();
+            this.wvcb8 = new System.Windows.Forms.ComboBox();
+            this.wvcb7 = new System.Windows.Forms.ComboBox();
+            this.wvcb6 = new System.Windows.Forms.ComboBox();
+            this.wvcb5 = new System.Windows.Forms.ComboBox();
+            this.wvcb4 = new System.Windows.Forms.ComboBox();
+            this.wvcb3 = new System.Windows.Forms.ComboBox();
+            this.wvcb2 = new System.Windows.Forms.ComboBox();
+            this.wvcb1 = new System.Windows.Forms.ComboBox();
+            this.wv7 = new System.Windows.Forms.Label();
+            this.wv12 = new System.Windows.Forms.Label();
+            this.wv10 = new System.Windows.Forms.Label();
+            this.wv4 = new System.Windows.Forms.Label();
+            this.wv6 = new System.Windows.Forms.Label();
+            this.wv8 = new System.Windows.Forms.Label();
+            this.wv11 = new System.Windows.Forms.Label();
+            this.wv9 = new System.Windows.Forms.Label();
+            this.wv5 = new System.Windows.Forms.Label();
+            this.wv3 = new System.Windows.Forms.Label();
+            this.wv2 = new System.Windows.Forms.Label();
+            this.wv1 = new System.Windows.Forms.Label();
             this.orcb15 = new System.Windows.Forms.ComboBox();
             this.orcb14 = new System.Windows.Forms.ComboBox();
             this.orcb13 = new System.Windows.Forms.ComboBox();
@@ -89,46 +103,32 @@ namespace Geriatric_Status
             this.or3 = new System.Windows.Forms.Label();
             this.or2 = new System.Windows.Forms.Label();
             this.or1 = new System.Windows.Forms.Label();
-            this.WalkViolation = new System.Windows.Forms.Panel();
-            this.WVSaveButton = new System.Windows.Forms.Button();
-            this.MalnutriciaPart1 = new System.Windows.Forms.Panel();
-            this.MSaveButton = new System.Windows.Forms.Button();
-            this.mcb6 = new System.Windows.Forms.ComboBox();
-            this.mcb5 = new System.Windows.Forms.ComboBox();
-            this.mcb4 = new System.Windows.Forms.ComboBox();
-            this.mcb3 = new System.Windows.Forms.ComboBox();
-            this.mcb2 = new System.Windows.Forms.ComboBox();
-            this.mcb1 = new System.Windows.Forms.ComboBox();
-            this.m4 = new System.Windows.Forms.Label();
-            this.m6 = new System.Windows.Forms.Label();
-            this.m5 = new System.Windows.Forms.Label();
-            this.m3 = new System.Windows.Forms.Label();
-            this.m2 = new System.Windows.Forms.Label();
-            this.m1 = new System.Windows.Forms.Label();
-            this.wvcb12 = new System.Windows.Forms.ComboBox();
-            this.wvcb11 = new System.Windows.Forms.ComboBox();
-            this.wvcb10 = new System.Windows.Forms.ComboBox();
-            this.wvcb9 = new System.Windows.Forms.ComboBox();
-            this.wvcb8 = new System.Windows.Forms.ComboBox();
-            this.wvcb7 = new System.Windows.Forms.ComboBox();
-            this.wvcb6 = new System.Windows.Forms.ComboBox();
-            this.wvcb5 = new System.Windows.Forms.ComboBox();
-            this.wvcb4 = new System.Windows.Forms.ComboBox();
-            this.wvcb3 = new System.Windows.Forms.ComboBox();
-            this.wvcb2 = new System.Windows.Forms.ComboBox();
-            this.wvcb1 = new System.Windows.Forms.ComboBox();
-            this.wv7 = new System.Windows.Forms.Label();
-            this.wv12 = new System.Windows.Forms.Label();
-            this.wv10 = new System.Windows.Forms.Label();
-            this.wv4 = new System.Windows.Forms.Label();
-            this.wv6 = new System.Windows.Forms.Label();
-            this.wv8 = new System.Windows.Forms.Label();
-            this.wv11 = new System.Windows.Forms.Label();
-            this.wv9 = new System.Windows.Forms.Label();
-            this.wv5 = new System.Windows.Forms.Label();
-            this.wv3 = new System.Windows.Forms.Label();
-            this.wv2 = new System.Windows.Forms.Label();
-            this.wv1 = new System.Windows.Forms.Label();
+            this.MalnutriciaPart2 = new System.Windows.Forms.Panel();
+            this.M2SaveButton = new System.Windows.Forms.Button();
+            this.m2cb12 = new System.Windows.Forms.ComboBox();
+            this.m2cb11 = new System.Windows.Forms.ComboBox();
+            this.m2cb10 = new System.Windows.Forms.ComboBox();
+            this.m2cb9 = new System.Windows.Forms.ComboBox();
+            this.m2cb8 = new System.Windows.Forms.ComboBox();
+            this.m2cb7 = new System.Windows.Forms.ComboBox();
+            this.m2cb6 = new System.Windows.Forms.ComboBox();
+            this.m2cb5 = new System.Windows.Forms.ComboBox();
+            this.m2cb4 = new System.Windows.Forms.ComboBox();
+            this.m2cb3 = new System.Windows.Forms.ComboBox();
+            this.m2cb2 = new System.Windows.Forms.ComboBox();
+            this.m2cb1 = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
             this.ORButton = new System.Windows.Forms.Button();
             this.WVButton = new System.Windows.Forms.Button();
             this.Mbutton = new System.Windows.Forms.Button();
@@ -206,9 +206,9 @@ namespace Geriatric_Status
             this.label33 = new System.Windows.Forms.Label();
             this.M2Button = new System.Windows.Forms.Button();
             this.OverallResilience.SuspendLayout();
-            this.MalnutriciaPart2.SuspendLayout();
             this.WalkViolation.SuspendLayout();
             this.MalnutriciaPart1.SuspendLayout();
+            this.MalnutriciaPart2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -235,7 +235,6 @@ namespace Geriatric_Status
             // 
             // OverallResilience
             // 
-            this.OverallResilience.Controls.Add(this.MalnutriciaPart2);
             this.OverallResilience.Controls.Add(this.ORSaveButton);
             this.OverallResilience.Controls.Add(this.orcb15);
             this.OverallResilience.Controls.Add(this.orcb14);
@@ -267,312 +266,10 @@ namespace Geriatric_Status
             this.OverallResilience.Controls.Add(this.or3);
             this.OverallResilience.Controls.Add(this.or2);
             this.OverallResilience.Controls.Add(this.or1);
-            this.OverallResilience.Location = new System.Drawing.Point(406, 6);
+            this.OverallResilience.Location = new System.Drawing.Point(396, 3);
             this.OverallResilience.Name = "OverallResilience";
-            this.OverallResilience.Size = new System.Drawing.Size(698, 629);
+            this.OverallResilience.Size = new System.Drawing.Size(698, 579);
             this.OverallResilience.TabIndex = 3;
-            // 
-            // MalnutriciaPart2
-            // 
-            this.MalnutriciaPart2.Controls.Add(this.M2SaveButton);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb12);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb11);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb10);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb9);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb8);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb7);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb6);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb5);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb4);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb3);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb2);
-            this.MalnutriciaPart2.Controls.Add(this.m2cb1);
-            this.MalnutriciaPart2.Controls.Add(this.label35);
-            this.MalnutriciaPart2.Controls.Add(this.label36);
-            this.MalnutriciaPart2.Controls.Add(this.label37);
-            this.MalnutriciaPart2.Controls.Add(this.label38);
-            this.MalnutriciaPart2.Controls.Add(this.label39);
-            this.MalnutriciaPart2.Controls.Add(this.label41);
-            this.MalnutriciaPart2.Controls.Add(this.label43);
-            this.MalnutriciaPart2.Controls.Add(this.label44);
-            this.MalnutriciaPart2.Controls.Add(this.label45);
-            this.MalnutriciaPart2.Controls.Add(this.label46);
-            this.MalnutriciaPart2.Controls.Add(this.label47);
-            this.MalnutriciaPart2.Controls.Add(this.label48);
-            this.MalnutriciaPart2.Location = new System.Drawing.Point(8, 8);
-            this.MalnutriciaPart2.Name = "MalnutriciaPart2";
-            this.MalnutriciaPart2.Size = new System.Drawing.Size(698, 629);
-            this.MalnutriciaPart2.TabIndex = 31;
-            // 
-            // M2SaveButton
-            // 
-            this.M2SaveButton.Location = new System.Drawing.Point(19, 486);
-            this.M2SaveButton.Name = "M2SaveButton";
-            this.M2SaveButton.Size = new System.Drawing.Size(75, 23);
-            this.M2SaveButton.TabIndex = 30;
-            this.M2SaveButton.Text = "Сохранить";
-            this.M2SaveButton.UseVisualStyleBackColor = true;
-            this.M2SaveButton.Click += new System.EventHandler(this.M2SaveButton_Click);
-            // 
-            // m2cb12
-            // 
-            this.m2cb12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb12.FormattingEnabled = true;
-            this.m2cb12.Items.AddRange(new object[] {
-            "Да",
-            "Нет"});
-            this.m2cb12.Location = new System.Drawing.Point(366, 344);
-            this.m2cb12.Name = "m2cb12";
-            this.m2cb12.Size = new System.Drawing.Size(158, 23);
-            this.m2cb12.TabIndex = 26;
-            // 
-            // m2cb11
-            // 
-            this.m2cb11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb11.FormattingEnabled = true;
-            this.m2cb11.Items.AddRange(new object[] {
-            "Менее 31см",
-            "31см  и выше"});
-            this.m2cb11.Location = new System.Drawing.Point(366, 314);
-            this.m2cb11.Name = "m2cb11";
-            this.m2cb11.Size = new System.Drawing.Size(158, 23);
-            this.m2cb11.TabIndex = 25;
-            // 
-            // m2cb10
-            // 
-            this.m2cb10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb10.FormattingEnabled = true;
-            this.m2cb10.Items.AddRange(new object[] {
-            "Менее 21см",
-            "21-22см",
-            "Больше 22см"});
-            this.m2cb10.Location = new System.Drawing.Point(366, 284);
-            this.m2cb10.Name = "m2cb10";
-            this.m2cb10.Size = new System.Drawing.Size(158, 23);
-            this.m2cb10.TabIndex = 24;
-            // 
-            // m2cb9
-            // 
-            this.m2cb9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb9.FormattingEnabled = true;
-            this.m2cb9.Items.AddRange(new object[] {
-            "Плохое",
-            "Не знаю",
-            "Хорошее",
-            "Отличное"});
-            this.m2cb9.Location = new System.Drawing.Point(366, 256);
-            this.m2cb9.Name = "m2cb9";
-            this.m2cb9.Size = new System.Drawing.Size(158, 23);
-            this.m2cb9.TabIndex = 23;
-            // 
-            // m2cb8
-            // 
-            this.m2cb8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb8.FormattingEnabled = true;
-            this.m2cb8.Items.AddRange(new object[] {
-            "Имеются проблемы",
-            "Недостаточный",
-            "Нет проблем с питанием"});
-            this.m2cb8.Location = new System.Drawing.Point(366, 224);
-            this.m2cb8.Name = "m2cb8";
-            this.m2cb8.Size = new System.Drawing.Size(158, 23);
-            this.m2cb8.TabIndex = 22;
-            // 
-            // m2cb7
-            // 
-            this.m2cb7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb7.FormattingEnabled = true;
-            this.m2cb7.Items.AddRange(new object[] {
-            "С посторонней помощью",
-            "Самостоятельно, но с трудом",
-            "Полностью самостоятельно"});
-            this.m2cb7.Location = new System.Drawing.Point(366, 194);
-            this.m2cb7.Name = "m2cb7";
-            this.m2cb7.Size = new System.Drawing.Size(158, 23);
-            this.m2cb7.TabIndex = 21;
-            // 
-            // m2cb6
-            // 
-            this.m2cb6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb6.FormattingEnabled = true;
-            this.m2cb6.Items.AddRange(new object[] {
-            "Менее 3х стаканов",
-            "3-5 стакана",
-            "Более 5 стаканов"});
-            this.m2cb6.Location = new System.Drawing.Point(366, 164);
-            this.m2cb6.Name = "m2cb6";
-            this.m2cb6.Size = new System.Drawing.Size(158, 23);
-            this.m2cb6.TabIndex = 20;
-            // 
-            // m2cb5
-            // 
-            this.m2cb5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb5.FormattingEnabled = true;
-            this.m2cb5.Items.AddRange(new object[] {
-            "0-1",
-            "2",
-            "3"});
-            this.m2cb5.Location = new System.Drawing.Point(366, 134);
-            this.m2cb5.Name = "m2cb5";
-            this.m2cb5.Size = new System.Drawing.Size(158, 23);
-            this.m2cb5.TabIndex = 19;
-            // 
-            // m2cb4
-            // 
-            this.m2cb4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb4.FormattingEnabled = true;
-            this.m2cb4.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
-            this.m2cb4.Location = new System.Drawing.Point(366, 104);
-            this.m2cb4.Name = "m2cb4";
-            this.m2cb4.Size = new System.Drawing.Size(158, 23);
-            this.m2cb4.TabIndex = 18;
-            // 
-            // m2cb3
-            // 
-            this.m2cb3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb3.FormattingEnabled = true;
-            this.m2cb3.Items.AddRange(new object[] {
-            "Да",
-            "Нет"});
-            this.m2cb3.Location = new System.Drawing.Point(366, 72);
-            this.m2cb3.Name = "m2cb3";
-            this.m2cb3.Size = new System.Drawing.Size(158, 23);
-            this.m2cb3.TabIndex = 17;
-            // 
-            // m2cb2
-            // 
-            this.m2cb2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb2.FormattingEnabled = true;
-            this.m2cb2.Items.AddRange(new object[] {
-            "Да",
-            "Нет"});
-            this.m2cb2.Location = new System.Drawing.Point(366, 43);
-            this.m2cb2.Name = "m2cb2";
-            this.m2cb2.Size = new System.Drawing.Size(158, 23);
-            this.m2cb2.TabIndex = 16;
-            // 
-            // m2cb1
-            // 
-            this.m2cb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.m2cb1.FormattingEnabled = true;
-            this.m2cb1.Items.AddRange(new object[] {
-            "Да",
-            "Нет"});
-            this.m2cb1.Location = new System.Drawing.Point(366, 12);
-            this.m2cb1.Name = "m2cb1";
-            this.m2cb1.Size = new System.Drawing.Size(158, 23);
-            this.m2cb1.TabIndex = 15;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(19, 200);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(243, 15);
-            this.label35.TabIndex = 13;
-            this.label35.Text = "Степень независимости при приеме пищи";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(19, 350);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(230, 15);
-            this.label36.TabIndex = 12;
-            this.label36.Text = "Прием овощей и фруктов в течении дня";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(19, 290);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(150, 15);
-            this.label37.TabIndex = 11;
-            this.label37.Text = "Средний диаметр  живота";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(19, 110);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(242, 15);
-            this.label38.TabIndex = 10;
-            this.label38.Text = "Количество основных блюд в течении дня";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(19, 170);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(101, 15);
-            this.label39.TabIndex = 9;
-            this.label39.Text = "Прием жидкости";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(19, 230);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(211, 15);
-            this.label41.TabIndex = 7;
-            this.label41.Text = "Собственная оценка статуса питания";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(19, 320);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(139, 15);
-            this.label43.TabIndex = 5;
-            this.label43.Text = "Средний диаметр бедер";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(19, 260);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(233, 15);
-            this.label44.TabIndex = 4;
-            this.label44.Text = "Собственная оценка состояния здоровья";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(19, 140);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(87, 15);
-            this.label45.TabIndex = 3;
-            this.label45.Text = "Прием белков";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(19, 80);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(122, 15);
-            this.label46.TabIndex = 2;
-            this.label46.Text = "Наличие пролежней";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(19, 50);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(243, 15);
-            this.label47.TabIndex = 1;
-            this.label47.Text = "Прием свыше трех препаратов ежедневно";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(19, 20);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(109, 15);
-            this.label48.TabIndex = 0;
-            this.label48.Text = "Проживание дома";
             // 
             // ORSaveButton
             // 
@@ -583,6 +280,475 @@ namespace Geriatric_Status
             this.ORSaveButton.Text = "Сохранить";
             this.ORSaveButton.UseVisualStyleBackColor = true;
             this.ORSaveButton.Click += new System.EventHandler(this.ORSaveButton_Click);
+            // 
+            // WalkViolation
+            // 
+            this.WalkViolation.Controls.Add(this.WVSaveButton);
+            this.WalkViolation.Controls.Add(this.wvcb12);
+            this.WalkViolation.Controls.Add(this.wvcb11);
+            this.WalkViolation.Controls.Add(this.wvcb10);
+            this.WalkViolation.Controls.Add(this.wvcb9);
+            this.WalkViolation.Controls.Add(this.wvcb8);
+            this.WalkViolation.Controls.Add(this.wvcb7);
+            this.WalkViolation.Controls.Add(this.wvcb6);
+            this.WalkViolation.Controls.Add(this.wvcb5);
+            this.WalkViolation.Controls.Add(this.wvcb4);
+            this.WalkViolation.Controls.Add(this.wvcb3);
+            this.WalkViolation.Controls.Add(this.wvcb2);
+            this.WalkViolation.Controls.Add(this.wvcb1);
+            this.WalkViolation.Controls.Add(this.wv7);
+            this.WalkViolation.Controls.Add(this.wv12);
+            this.WalkViolation.Controls.Add(this.wv10);
+            this.WalkViolation.Controls.Add(this.wv4);
+            this.WalkViolation.Controls.Add(this.wv6);
+            this.WalkViolation.Controls.Add(this.wv8);
+            this.WalkViolation.Controls.Add(this.wv11);
+            this.WalkViolation.Controls.Add(this.wv9);
+            this.WalkViolation.Controls.Add(this.wv5);
+            this.WalkViolation.Controls.Add(this.wv3);
+            this.WalkViolation.Controls.Add(this.wv2);
+            this.WalkViolation.Controls.Add(this.wv1);
+            this.WalkViolation.Location = new System.Drawing.Point(396, 3);
+            this.WalkViolation.Name = "WalkViolation";
+            this.WalkViolation.Size = new System.Drawing.Size(698, 634);
+            this.WalkViolation.TabIndex = 31;
+            // 
+            // MalnutriciaPart1
+            // 
+            this.MalnutriciaPart1.Controls.Add(this.MSaveButton);
+            this.MalnutriciaPart1.Controls.Add(this.mcb6);
+            this.MalnutriciaPart1.Controls.Add(this.mcb5);
+            this.MalnutriciaPart1.Controls.Add(this.mcb4);
+            this.MalnutriciaPart1.Controls.Add(this.mcb3);
+            this.MalnutriciaPart1.Controls.Add(this.mcb2);
+            this.MalnutriciaPart1.Controls.Add(this.mcb1);
+            this.MalnutriciaPart1.Controls.Add(this.m4);
+            this.MalnutriciaPart1.Controls.Add(this.m6);
+            this.MalnutriciaPart1.Controls.Add(this.m5);
+            this.MalnutriciaPart1.Controls.Add(this.m3);
+            this.MalnutriciaPart1.Controls.Add(this.m2);
+            this.MalnutriciaPart1.Controls.Add(this.m1);
+            this.MalnutriciaPart1.Location = new System.Drawing.Point(394, 2);
+            this.MalnutriciaPart1.Name = "MalnutriciaPart1";
+            this.MalnutriciaPart1.Size = new System.Drawing.Size(698, 634);
+            this.MalnutriciaPart1.TabIndex = 32;
+            // 
+            // MSaveButton
+            // 
+            this.MSaveButton.Location = new System.Drawing.Point(19, 222);
+            this.MSaveButton.Name = "MSaveButton";
+            this.MSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.MSaveButton.TabIndex = 30;
+            this.MSaveButton.Text = "Сохранить";
+            this.MSaveButton.UseVisualStyleBackColor = true;
+            this.MSaveButton.Click += new System.EventHandler(this.MSaveButton_Click);
+            // 
+            // mcb6
+            // 
+            this.mcb6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mcb6.FormattingEnabled = true;
+            this.mcb6.Items.AddRange(new object[] {
+            "Меньше 19",
+            "19-21",
+            "21-23",
+            "Больше 23"});
+            this.mcb6.Location = new System.Drawing.Point(469, 167);
+            this.mcb6.Name = "mcb6";
+            this.mcb6.Size = new System.Drawing.Size(209, 23);
+            this.mcb6.TabIndex = 20;
+            // 
+            // mcb5
+            // 
+            this.mcb5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mcb5.FormattingEnabled = true;
+            this.mcb5.Items.AddRange(new object[] {
+            "Тяжелая депрессия, деменция",
+            "Умерення депрессия",
+            "Отсутствие проблем"});
+            this.mcb5.Location = new System.Drawing.Point(469, 132);
+            this.mcb5.Name = "mcb5";
+            this.mcb5.Size = new System.Drawing.Size(209, 23);
+            this.mcb5.TabIndex = 19;
+            // 
+            // mcb4
+            // 
+            this.mcb4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mcb4.FormattingEnabled = true;
+            this.mcb4.Items.AddRange(new object[] {
+            "Наличие стресса",
+            "Отсутствие стресса"});
+            this.mcb4.Location = new System.Drawing.Point(469, 101);
+            this.mcb4.Name = "mcb4";
+            this.mcb4.Size = new System.Drawing.Size(209, 23);
+            this.mcb4.TabIndex = 18;
+            // 
+            // mcb3
+            // 
+            this.mcb3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mcb3.FormattingEnabled = true;
+            this.mcb3.Items.AddRange(new object[] {
+            "Прикован к постели",
+            "Передвижение в пределах квартиры",
+            "Нет ограничений"});
+            this.mcb3.Location = new System.Drawing.Point(469, 72);
+            this.mcb3.Name = "mcb3";
+            this.mcb3.Size = new System.Drawing.Size(209, 23);
+            this.mcb3.TabIndex = 17;
+            // 
+            // mcb2
+            // 
+            this.mcb2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mcb2.FormattingEnabled = true;
+            this.mcb2.Items.AddRange(new object[] {
+            "Более 2 кг",
+            "Не знаю",
+            "В пределах 1-2 кг",
+            "Стабильная масса тела"});
+            this.mcb2.Location = new System.Drawing.Point(469, 42);
+            this.mcb2.Name = "mcb2";
+            this.mcb2.Size = new System.Drawing.Size(209, 23);
+            this.mcb2.TabIndex = 16;
+            // 
+            // mcb1
+            // 
+            this.mcb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mcb1.FormattingEnabled = true;
+            this.mcb1.Items.AddRange(new object[] {
+            "Выраженное мнижение",
+            "Умеренное снижение",
+            "Нет снижения"});
+            this.mcb1.Location = new System.Drawing.Point(469, 12);
+            this.mcb1.Name = "mcb1";
+            this.mcb1.Size = new System.Drawing.Size(209, 23);
+            this.mcb1.TabIndex = 15;
+            // 
+            // m4
+            // 
+            this.m4.AutoSize = true;
+            this.m4.Location = new System.Drawing.Point(19, 107);
+            this.m4.Name = "m4";
+            this.m4.Size = new System.Drawing.Size(402, 15);
+            this.m4.TabIndex = 10;
+            this.m4.Text = "Наличие психологического стресса в течении последних трех месяцев";
+            // 
+            // m6
+            // 
+            this.m6.AutoSize = true;
+            this.m6.Location = new System.Drawing.Point(19, 170);
+            this.m6.Name = "m6";
+            this.m6.Size = new System.Drawing.Size(174, 15);
+            this.m6.TabIndex = 9;
+            this.m6.Text = "Величина индекса массы тела";
+            // 
+            // m5
+            // 
+            this.m5.AutoSize = true;
+            this.m5.Location = new System.Drawing.Point(19, 140);
+            this.m5.Name = "m5";
+            this.m5.Size = new System.Drawing.Size(209, 15);
+            this.m5.TabIndex = 3;
+            this.m5.Text = "Наличие психологических проблем";
+            // 
+            // m3
+            // 
+            this.m3.AutoSize = true;
+            this.m3.Location = new System.Drawing.Point(19, 80);
+            this.m3.Name = "m3";
+            this.m3.Size = new System.Drawing.Size(130, 15);
+            this.m3.TabIndex = 2;
+            this.m3.Text = "Степень мобильности";
+            // 
+            // m2
+            // 
+            this.m2.AutoSize = true;
+            this.m2.Location = new System.Drawing.Point(19, 50);
+            this.m2.Name = "m2";
+            this.m2.Size = new System.Drawing.Size(438, 15);
+            this.m2.TabIndex = 1;
+            this.m2.Text = "Отмечалось ли у Вас снижение массы телв течении последних трех месяцев?";
+            // 
+            // m1
+            // 
+            this.m1.AutoSize = true;
+            this.m1.Location = new System.Drawing.Point(19, 20);
+            this.m1.Name = "m1";
+            this.m1.Size = new System.Drawing.Size(217, 15);
+            this.m1.TabIndex = 0;
+            this.m1.Text = "Имеется ли у Вас снижение аппетита?";
+            // 
+            // WVSaveButton
+            // 
+            this.WVSaveButton.Location = new System.Drawing.Point(19, 384);
+            this.WVSaveButton.Name = "WVSaveButton";
+            this.WVSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.WVSaveButton.TabIndex = 30;
+            this.WVSaveButton.Text = "Сохранить";
+            this.WVSaveButton.UseVisualStyleBackColor = true;
+            this.WVSaveButton.Click += new System.EventHandler(this.WVSaveButton_Click);
+            // 
+            // wvcb12
+            // 
+            this.wvcb12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb12.FormattingEnabled = true;
+            this.wvcb12.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb12.Location = new System.Drawing.Point(228, 340);
+            this.wvcb12.Name = "wvcb12";
+            this.wvcb12.Size = new System.Drawing.Size(158, 23);
+            this.wvcb12.TabIndex = 26;
+            // 
+            // wvcb11
+            // 
+            this.wvcb11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb11.FormattingEnabled = true;
+            this.wvcb11.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb11.Location = new System.Drawing.Point(228, 310);
+            this.wvcb11.Name = "wvcb11";
+            this.wvcb11.Size = new System.Drawing.Size(158, 23);
+            this.wvcb11.TabIndex = 25;
+            // 
+            // wvcb10
+            // 
+            this.wvcb10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb10.FormattingEnabled = true;
+            this.wvcb10.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb10.Location = new System.Drawing.Point(228, 280);
+            this.wvcb10.Name = "wvcb10";
+            this.wvcb10.Size = new System.Drawing.Size(158, 23);
+            this.wvcb10.TabIndex = 24;
+            // 
+            // wvcb9
+            // 
+            this.wvcb9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb9.FormattingEnabled = true;
+            this.wvcb9.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb9.Location = new System.Drawing.Point(228, 250);
+            this.wvcb9.Name = "wvcb9";
+            this.wvcb9.Size = new System.Drawing.Size(158, 23);
+            this.wvcb9.TabIndex = 23;
+            // 
+            // wvcb8
+            // 
+            this.wvcb8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb8.FormattingEnabled = true;
+            this.wvcb8.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb8.Location = new System.Drawing.Point(228, 220);
+            this.wvcb8.Name = "wvcb8";
+            this.wvcb8.Size = new System.Drawing.Size(158, 23);
+            this.wvcb8.TabIndex = 22;
+            // 
+            // wvcb7
+            // 
+            this.wvcb7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb7.FormattingEnabled = true;
+            this.wvcb7.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb7.Location = new System.Drawing.Point(228, 190);
+            this.wvcb7.Name = "wvcb7";
+            this.wvcb7.Size = new System.Drawing.Size(158, 23);
+            this.wvcb7.TabIndex = 21;
+            // 
+            // wvcb6
+            // 
+            this.wvcb6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb6.FormattingEnabled = true;
+            this.wvcb6.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb6.Location = new System.Drawing.Point(228, 160);
+            this.wvcb6.Name = "wvcb6";
+            this.wvcb6.Size = new System.Drawing.Size(158, 23);
+            this.wvcb6.TabIndex = 20;
+            // 
+            // wvcb5
+            // 
+            this.wvcb5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb5.FormattingEnabled = true;
+            this.wvcb5.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb5.Location = new System.Drawing.Point(228, 130);
+            this.wvcb5.Name = "wvcb5";
+            this.wvcb5.Size = new System.Drawing.Size(158, 23);
+            this.wvcb5.TabIndex = 19;
+            // 
+            // wvcb4
+            // 
+            this.wvcb4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb4.FormattingEnabled = true;
+            this.wvcb4.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb4.Location = new System.Drawing.Point(228, 102);
+            this.wvcb4.Name = "wvcb4";
+            this.wvcb4.Size = new System.Drawing.Size(158, 23);
+            this.wvcb4.TabIndex = 18;
+            // 
+            // wvcb3
+            // 
+            this.wvcb3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb3.FormattingEnabled = true;
+            this.wvcb3.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb3.Location = new System.Drawing.Point(228, 72);
+            this.wvcb3.Name = "wvcb3";
+            this.wvcb3.Size = new System.Drawing.Size(158, 23);
+            this.wvcb3.TabIndex = 17;
+            // 
+            // wvcb2
+            // 
+            this.wvcb2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb2.FormattingEnabled = true;
+            this.wvcb2.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb2.Location = new System.Drawing.Point(228, 42);
+            this.wvcb2.Name = "wvcb2";
+            this.wvcb2.Size = new System.Drawing.Size(158, 23);
+            this.wvcb2.TabIndex = 16;
+            // 
+            // wvcb1
+            // 
+            this.wvcb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.wvcb1.FormattingEnabled = true;
+            this.wvcb1.Items.AddRange(new object[] {
+            "Грубое нарушение",
+            "Умеренное нарушение",
+            "Норма"});
+            this.wvcb1.Location = new System.Drawing.Point(228, 12);
+            this.wvcb1.Name = "wvcb1";
+            this.wvcb1.Size = new System.Drawing.Size(158, 23);
+            this.wvcb1.TabIndex = 15;
+            // 
+            // wv7
+            // 
+            this.wv7.AutoSize = true;
+            this.wv7.Location = new System.Drawing.Point(19, 200);
+            this.wv7.Name = "wv7";
+            this.wv7.Size = new System.Drawing.Size(147, 15);
+            this.wv7.TabIndex = 13;
+            this.wv7.Text = "Устойчивость при хотьбе";
+            // 
+            // wv12
+            // 
+            this.wv12.AutoSize = true;
+            this.wv12.Location = new System.Drawing.Point(19, 350);
+            this.wv12.Name = "wv12";
+            this.wv12.Size = new System.Drawing.Size(165, 15);
+            this.wv12.TabIndex = 12;
+            this.wv12.Text = "Высота шага для левой ноги";
+            // 
+            // wv10
+            // 
+            this.wv10.AutoSize = true;
+            this.wv10.Location = new System.Drawing.Point(19, 290);
+            this.wv10.Name = "wv10";
+            this.wv10.Size = new System.Drawing.Size(209, 15);
+            this.wv10.TabIndex = 11;
+            this.wv10.Text = "Произвольное уведичение скорости";
+            // 
+            // wv4
+            // 
+            this.wv4.AutoSize = true;
+            this.wv4.Location = new System.Drawing.Point(19, 110);
+            this.wv4.Name = "wv4";
+            this.wv4.Size = new System.Drawing.Size(138, 15);
+            this.wv4.TabIndex = 10;
+            this.wv4.Text = "Длина шага левой ноги";
+            // 
+            // wv6
+            // 
+            this.wv6.AutoSize = true;
+            this.wv6.Location = new System.Drawing.Point(19, 170);
+            this.wv6.Name = "wv6";
+            this.wv6.Size = new System.Drawing.Size(184, 15);
+            this.wv6.TabIndex = 9;
+            this.wv6.Text = "Отклонение от линии движения";
+            // 
+            // wv8
+            // 
+            this.wv8.AutoSize = true;
+            this.wv8.Location = new System.Drawing.Point(19, 230);
+            this.wv8.Name = "wv8";
+            this.wv8.Size = new System.Drawing.Size(185, 15);
+            this.wv8.TabIndex = 7;
+            this.wv8.Text = "Степень покачивания туловища";
+            // 
+            // wv11
+            // 
+            this.wv11.AutoSize = true;
+            this.wv11.Location = new System.Drawing.Point(19, 320);
+            this.wv11.Name = "wv11";
+            this.wv11.Size = new System.Drawing.Size(172, 15);
+            this.wv11.TabIndex = 5;
+            this.wv11.Text = "Высота шага для правой ноги";
+            // 
+            // wv9
+            // 
+            this.wv9.AutoSize = true;
+            this.wv9.Location = new System.Drawing.Point(19, 260);
+            this.wv9.Name = "wv9";
+            this.wv9.Size = new System.Drawing.Size(64, 15);
+            this.wv9.TabIndex = 4;
+            this.wv9.Text = "Повороты";
+            // 
+            // wv5
+            // 
+            this.wv5.AutoSize = true;
+            this.wv5.Location = new System.Drawing.Point(19, 140);
+            this.wv5.Name = "wv5";
+            this.wv5.Size = new System.Drawing.Size(145, 15);
+            this.wv5.TabIndex = 3;
+            this.wv5.Text = "Длина шага правой ноги";
+            // 
+            // wv3
+            // 
+            this.wv3.AutoSize = true;
+            this.wv3.Location = new System.Drawing.Point(19, 80);
+            this.wv3.Name = "wv3";
+            this.wv3.Size = new System.Drawing.Size(138, 15);
+            this.wv3.TabIndex = 2;
+            this.wv3.Text = "Непрерывность хотьбы";
+            // 
+            // wv2
+            // 
+            this.wv2.AutoSize = true;
+            this.wv2.Location = new System.Drawing.Point(19, 50);
+            this.wv2.Name = "wv2";
+            this.wv2.Size = new System.Drawing.Size(134, 15);
+            this.wv2.TabIndex = 1;
+            this.wv2.Text = "Симметричность шага";
+            // 
+            // wv1
+            // 
+            this.wv1.AutoSize = true;
+            this.wv1.Location = new System.Drawing.Point(19, 20);
+            this.wv1.Name = "wv1";
+            this.wv1.Size = new System.Drawing.Size(106, 15);
+            this.wv1.TabIndex = 0;
+            this.wv1.Text = "Начало движения";
             // 
             // orcb15
             // 
@@ -914,475 +1080,307 @@ namespace Geriatric_Status
             this.or1.TabIndex = 0;
             this.or1.Text = "Сидя";
             // 
-            // WalkViolation
+            // MalnutriciaPart2
             // 
-            this.WalkViolation.Controls.Add(this.WVSaveButton);
-            this.WalkViolation.Controls.Add(this.MalnutriciaPart1);
-            this.WalkViolation.Controls.Add(this.wvcb12);
-            this.WalkViolation.Controls.Add(this.wvcb11);
-            this.WalkViolation.Controls.Add(this.wvcb10);
-            this.WalkViolation.Controls.Add(this.wvcb9);
-            this.WalkViolation.Controls.Add(this.wvcb8);
-            this.WalkViolation.Controls.Add(this.wvcb7);
-            this.WalkViolation.Controls.Add(this.wvcb6);
-            this.WalkViolation.Controls.Add(this.wvcb5);
-            this.WalkViolation.Controls.Add(this.wvcb4);
-            this.WalkViolation.Controls.Add(this.wvcb3);
-            this.WalkViolation.Controls.Add(this.wvcb2);
-            this.WalkViolation.Controls.Add(this.wvcb1);
-            this.WalkViolation.Controls.Add(this.wv7);
-            this.WalkViolation.Controls.Add(this.wv12);
-            this.WalkViolation.Controls.Add(this.wv10);
-            this.WalkViolation.Controls.Add(this.wv4);
-            this.WalkViolation.Controls.Add(this.wv6);
-            this.WalkViolation.Controls.Add(this.wv8);
-            this.WalkViolation.Controls.Add(this.wv11);
-            this.WalkViolation.Controls.Add(this.wv9);
-            this.WalkViolation.Controls.Add(this.wv5);
-            this.WalkViolation.Controls.Add(this.wv3);
-            this.WalkViolation.Controls.Add(this.wv2);
-            this.WalkViolation.Controls.Add(this.wv1);
-            this.WalkViolation.Location = new System.Drawing.Point(402, 6);
-            this.WalkViolation.Name = "WalkViolation";
-            this.WalkViolation.Size = new System.Drawing.Size(698, 629);
-            this.WalkViolation.TabIndex = 31;
+            this.MalnutriciaPart2.Controls.Add(this.M2SaveButton);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb12);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb11);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb10);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb9);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb8);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb7);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb6);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb5);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb4);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb3);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb2);
+            this.MalnutriciaPart2.Controls.Add(this.m2cb1);
+            this.MalnutriciaPart2.Controls.Add(this.label35);
+            this.MalnutriciaPart2.Controls.Add(this.label36);
+            this.MalnutriciaPart2.Controls.Add(this.label37);
+            this.MalnutriciaPart2.Controls.Add(this.label38);
+            this.MalnutriciaPart2.Controls.Add(this.label39);
+            this.MalnutriciaPart2.Controls.Add(this.label41);
+            this.MalnutriciaPart2.Controls.Add(this.label43);
+            this.MalnutriciaPart2.Controls.Add(this.label44);
+            this.MalnutriciaPart2.Controls.Add(this.label45);
+            this.MalnutriciaPart2.Controls.Add(this.label46);
+            this.MalnutriciaPart2.Controls.Add(this.label47);
+            this.MalnutriciaPart2.Controls.Add(this.label48);
+            this.MalnutriciaPart2.Location = new System.Drawing.Point(401, 2);
+            this.MalnutriciaPart2.Name = "MalnutriciaPart2";
+            this.MalnutriciaPart2.Size = new System.Drawing.Size(698, 625);
+            this.MalnutriciaPart2.TabIndex = 31;
             // 
-            // WVSaveButton
+            // M2SaveButton
             // 
-            this.WVSaveButton.Location = new System.Drawing.Point(19, 384);
-            this.WVSaveButton.Name = "WVSaveButton";
-            this.WVSaveButton.Size = new System.Drawing.Size(75, 23);
-            this.WVSaveButton.TabIndex = 30;
-            this.WVSaveButton.Text = "Сохранить";
-            this.WVSaveButton.UseVisualStyleBackColor = true;
-            this.WVSaveButton.Click += new System.EventHandler(this.WVSaveButton_Click);
+            this.M2SaveButton.Location = new System.Drawing.Point(19, 398);
+            this.M2SaveButton.Name = "M2SaveButton";
+            this.M2SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.M2SaveButton.TabIndex = 30;
+            this.M2SaveButton.Text = "Сохранить";
+            this.M2SaveButton.UseVisualStyleBackColor = true;
+            this.M2SaveButton.Click += new System.EventHandler(this.M2SaveButton_Click);
             // 
-            // MalnutriciaPart1
+            // m2cb12
             // 
-            this.MalnutriciaPart1.Controls.Add(this.MSaveButton);
-            this.MalnutriciaPart1.Controls.Add(this.mcb6);
-            this.MalnutriciaPart1.Controls.Add(this.mcb5);
-            this.MalnutriciaPart1.Controls.Add(this.mcb4);
-            this.MalnutriciaPart1.Controls.Add(this.mcb3);
-            this.MalnutriciaPart1.Controls.Add(this.mcb2);
-            this.MalnutriciaPart1.Controls.Add(this.mcb1);
-            this.MalnutriciaPart1.Controls.Add(this.m4);
-            this.MalnutriciaPart1.Controls.Add(this.m6);
-            this.MalnutriciaPart1.Controls.Add(this.m5);
-            this.MalnutriciaPart1.Controls.Add(this.m3);
-            this.MalnutriciaPart1.Controls.Add(this.m2);
-            this.MalnutriciaPart1.Controls.Add(this.m1);
-            this.MalnutriciaPart1.Location = new System.Drawing.Point(130, 155);
-            this.MalnutriciaPart1.Name = "MalnutriciaPart1";
-            this.MalnutriciaPart1.Size = new System.Drawing.Size(749, 629);
-            this.MalnutriciaPart1.TabIndex = 32;
+            this.m2cb12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb12.FormattingEnabled = true;
+            this.m2cb12.Items.AddRange(new object[] {
+            "Да",
+            "Нет"});
+            this.m2cb12.Location = new System.Drawing.Point(366, 344);
+            this.m2cb12.Name = "m2cb12";
+            this.m2cb12.Size = new System.Drawing.Size(158, 23);
+            this.m2cb12.TabIndex = 26;
             // 
-            // MSaveButton
+            // m2cb11
             // 
-            this.MSaveButton.Location = new System.Drawing.Point(19, 222);
-            this.MSaveButton.Name = "MSaveButton";
-            this.MSaveButton.Size = new System.Drawing.Size(75, 23);
-            this.MSaveButton.TabIndex = 30;
-            this.MSaveButton.Text = "Сохранить";
-            this.MSaveButton.UseVisualStyleBackColor = true;
-            this.MSaveButton.Click += new System.EventHandler(this.MSaveButton_Click);
+            this.m2cb11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb11.FormattingEnabled = true;
+            this.m2cb11.Items.AddRange(new object[] {
+            "Менее 31см",
+            "31см  и выше"});
+            this.m2cb11.Location = new System.Drawing.Point(366, 314);
+            this.m2cb11.Name = "m2cb11";
+            this.m2cb11.Size = new System.Drawing.Size(158, 23);
+            this.m2cb11.TabIndex = 25;
             // 
-            // mcb6
+            // m2cb10
             // 
-            this.mcb6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.mcb6.FormattingEnabled = true;
-            this.mcb6.Items.AddRange(new object[] {
-            "Меньше 19",
-            "19-21",
-            "21-23",
-            "Больше 23"});
-            this.mcb6.Location = new System.Drawing.Point(469, 167);
-            this.mcb6.Name = "mcb6";
-            this.mcb6.Size = new System.Drawing.Size(209, 23);
-            this.mcb6.TabIndex = 20;
+            this.m2cb10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb10.FormattingEnabled = true;
+            this.m2cb10.Items.AddRange(new object[] {
+            "Менее 21см",
+            "21-22см",
+            "Больше 22см"});
+            this.m2cb10.Location = new System.Drawing.Point(366, 284);
+            this.m2cb10.Name = "m2cb10";
+            this.m2cb10.Size = new System.Drawing.Size(158, 23);
+            this.m2cb10.TabIndex = 24;
             // 
-            // mcb5
+            // m2cb9
             // 
-            this.mcb5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.mcb5.FormattingEnabled = true;
-            this.mcb5.Items.AddRange(new object[] {
-            "Тяжелая депрессия, деменция",
-            "Умерення депрессия",
-            "Отсутствие проблем"});
-            this.mcb5.Location = new System.Drawing.Point(469, 132);
-            this.mcb5.Name = "mcb5";
-            this.mcb5.Size = new System.Drawing.Size(209, 23);
-            this.mcb5.TabIndex = 19;
-            // 
-            // mcb4
-            // 
-            this.mcb4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.mcb4.FormattingEnabled = true;
-            this.mcb4.Items.AddRange(new object[] {
-            "Наличие стресса",
-            "Отсутствие стресса"});
-            this.mcb4.Location = new System.Drawing.Point(469, 101);
-            this.mcb4.Name = "mcb4";
-            this.mcb4.Size = new System.Drawing.Size(209, 23);
-            this.mcb4.TabIndex = 18;
-            // 
-            // mcb3
-            // 
-            this.mcb3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.mcb3.FormattingEnabled = true;
-            this.mcb3.Items.AddRange(new object[] {
-            "Прикован к постели",
-            "Передвижение в пределах квартиры",
-            "Нет ограничений"});
-            this.mcb3.Location = new System.Drawing.Point(469, 72);
-            this.mcb3.Name = "mcb3";
-            this.mcb3.Size = new System.Drawing.Size(209, 23);
-            this.mcb3.TabIndex = 17;
-            // 
-            // mcb2
-            // 
-            this.mcb2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.mcb2.FormattingEnabled = true;
-            this.mcb2.Items.AddRange(new object[] {
-            "Более 2 кг",
+            this.m2cb9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb9.FormattingEnabled = true;
+            this.m2cb9.Items.AddRange(new object[] {
+            "Плохое",
             "Не знаю",
-            "В пределах 1-2 кг",
-            "Стабильная масса тела"});
-            this.mcb2.Location = new System.Drawing.Point(469, 42);
-            this.mcb2.Name = "mcb2";
-            this.mcb2.Size = new System.Drawing.Size(209, 23);
-            this.mcb2.TabIndex = 16;
+            "Хорошее",
+            "Отличное"});
+            this.m2cb9.Location = new System.Drawing.Point(366, 256);
+            this.m2cb9.Name = "m2cb9";
+            this.m2cb9.Size = new System.Drawing.Size(158, 23);
+            this.m2cb9.TabIndex = 23;
             // 
-            // mcb1
+            // m2cb8
             // 
-            this.mcb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.mcb1.FormattingEnabled = true;
-            this.mcb1.Items.AddRange(new object[] {
-            "Выраженное мнижение",
-            "Умеренное снижение",
-            "Нет снижения"});
-            this.mcb1.Location = new System.Drawing.Point(469, 12);
-            this.mcb1.Name = "mcb1";
-            this.mcb1.Size = new System.Drawing.Size(209, 23);
-            this.mcb1.TabIndex = 15;
+            this.m2cb8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb8.FormattingEnabled = true;
+            this.m2cb8.Items.AddRange(new object[] {
+            "Имеются проблемы",
+            "Недостаточный",
+            "Нет проблем с питанием"});
+            this.m2cb8.Location = new System.Drawing.Point(366, 224);
+            this.m2cb8.Name = "m2cb8";
+            this.m2cb8.Size = new System.Drawing.Size(158, 23);
+            this.m2cb8.TabIndex = 22;
             // 
-            // m4
+            // m2cb7
             // 
-            this.m4.AutoSize = true;
-            this.m4.Location = new System.Drawing.Point(19, 110);
-            this.m4.Name = "m4";
-            this.m4.Size = new System.Drawing.Size(402, 15);
-            this.m4.TabIndex = 10;
-            this.m4.Text = "Наличие психологического стресса в течении последних трех месяцев";
+            this.m2cb7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb7.FormattingEnabled = true;
+            this.m2cb7.Items.AddRange(new object[] {
+            "С посторонней помощью",
+            "Самостоятельно, но с трудом",
+            "Полностью самостоятельно"});
+            this.m2cb7.Location = new System.Drawing.Point(366, 194);
+            this.m2cb7.Name = "m2cb7";
+            this.m2cb7.Size = new System.Drawing.Size(158, 23);
+            this.m2cb7.TabIndex = 21;
             // 
-            // m6
+            // m2cb6
             // 
-            this.m6.AutoSize = true;
-            this.m6.Location = new System.Drawing.Point(19, 170);
-            this.m6.Name = "m6";
-            this.m6.Size = new System.Drawing.Size(174, 15);
-            this.m6.TabIndex = 9;
-            this.m6.Text = "Величина индекса массы тела";
+            this.m2cb6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb6.FormattingEnabled = true;
+            this.m2cb6.Items.AddRange(new object[] {
+            "Менее 3х стаканов",
+            "3-5 стакана",
+            "Более 5 стаканов"});
+            this.m2cb6.Location = new System.Drawing.Point(366, 164);
+            this.m2cb6.Name = "m2cb6";
+            this.m2cb6.Size = new System.Drawing.Size(158, 23);
+            this.m2cb6.TabIndex = 20;
             // 
-            // m5
+            // m2cb5
             // 
-            this.m5.AutoSize = true;
-            this.m5.Location = new System.Drawing.Point(19, 140);
-            this.m5.Name = "m5";
-            this.m5.Size = new System.Drawing.Size(209, 15);
-            this.m5.TabIndex = 3;
-            this.m5.Text = "Наличие психологических проблем";
+            this.m2cb5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb5.FormattingEnabled = true;
+            this.m2cb5.Items.AddRange(new object[] {
+            "0-1",
+            "2",
+            "3"});
+            this.m2cb5.Location = new System.Drawing.Point(366, 134);
+            this.m2cb5.Name = "m2cb5";
+            this.m2cb5.Size = new System.Drawing.Size(158, 23);
+            this.m2cb5.TabIndex = 19;
             // 
-            // m3
+            // m2cb4
             // 
-            this.m3.AutoSize = true;
-            this.m3.Location = new System.Drawing.Point(19, 80);
-            this.m3.Name = "m3";
-            this.m3.Size = new System.Drawing.Size(130, 15);
-            this.m3.TabIndex = 2;
-            this.m3.Text = "Степень мобильности";
+            this.m2cb4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb4.FormattingEnabled = true;
+            this.m2cb4.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.m2cb4.Location = new System.Drawing.Point(366, 104);
+            this.m2cb4.Name = "m2cb4";
+            this.m2cb4.Size = new System.Drawing.Size(158, 23);
+            this.m2cb4.TabIndex = 18;
             // 
-            // m2
+            // m2cb3
             // 
-            this.m2.AutoSize = true;
-            this.m2.Location = new System.Drawing.Point(19, 50);
-            this.m2.Name = "m2";
-            this.m2.Size = new System.Drawing.Size(438, 15);
-            this.m2.TabIndex = 1;
-            this.m2.Text = "Отмечалось ли у Вас снижение массы телв течении последних трех месяцев?";
+            this.m2cb3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb3.FormattingEnabled = true;
+            this.m2cb3.Items.AddRange(new object[] {
+            "Да",
+            "Нет"});
+            this.m2cb3.Location = new System.Drawing.Point(366, 72);
+            this.m2cb3.Name = "m2cb3";
+            this.m2cb3.Size = new System.Drawing.Size(158, 23);
+            this.m2cb3.TabIndex = 17;
             // 
-            // m1
+            // m2cb2
             // 
-            this.m1.AutoSize = true;
-            this.m1.Location = new System.Drawing.Point(19, 20);
-            this.m1.Name = "m1";
-            this.m1.Size = new System.Drawing.Size(217, 15);
-            this.m1.TabIndex = 0;
-            this.m1.Text = "Имеется ли у Вас снижение аппетита?";
+            this.m2cb2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb2.FormattingEnabled = true;
+            this.m2cb2.Items.AddRange(new object[] {
+            "Да",
+            "Нет"});
+            this.m2cb2.Location = new System.Drawing.Point(366, 43);
+            this.m2cb2.Name = "m2cb2";
+            this.m2cb2.Size = new System.Drawing.Size(158, 23);
+            this.m2cb2.TabIndex = 16;
             // 
-            // wvcb12
+            // m2cb1
             // 
-            this.wvcb12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb12.FormattingEnabled = true;
-            this.wvcb12.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb12.Location = new System.Drawing.Point(228, 340);
-            this.wvcb12.Name = "wvcb12";
-            this.wvcb12.Size = new System.Drawing.Size(158, 23);
-            this.wvcb12.TabIndex = 26;
+            this.m2cb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m2cb1.FormattingEnabled = true;
+            this.m2cb1.Items.AddRange(new object[] {
+            "Да",
+            "Нет"});
+            this.m2cb1.Location = new System.Drawing.Point(366, 12);
+            this.m2cb1.Name = "m2cb1";
+            this.m2cb1.Size = new System.Drawing.Size(158, 23);
+            this.m2cb1.TabIndex = 15;
             // 
-            // wvcb11
+            // label35
             // 
-            this.wvcb11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb11.FormattingEnabled = true;
-            this.wvcb11.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb11.Location = new System.Drawing.Point(228, 310);
-            this.wvcb11.Name = "wvcb11";
-            this.wvcb11.Size = new System.Drawing.Size(158, 23);
-            this.wvcb11.TabIndex = 25;
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(19, 200);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(243, 15);
+            this.label35.TabIndex = 13;
+            this.label35.Text = "Степень независимости при приеме пищи";
             // 
-            // wvcb10
+            // label36
             // 
-            this.wvcb10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb10.FormattingEnabled = true;
-            this.wvcb10.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb10.Location = new System.Drawing.Point(228, 280);
-            this.wvcb10.Name = "wvcb10";
-            this.wvcb10.Size = new System.Drawing.Size(158, 23);
-            this.wvcb10.TabIndex = 24;
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(19, 350);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(230, 15);
+            this.label36.TabIndex = 12;
+            this.label36.Text = "Прием овощей и фруктов в течении дня";
             // 
-            // wvcb9
+            // label37
             // 
-            this.wvcb9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb9.FormattingEnabled = true;
-            this.wvcb9.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb9.Location = new System.Drawing.Point(228, 250);
-            this.wvcb9.Name = "wvcb9";
-            this.wvcb9.Size = new System.Drawing.Size(158, 23);
-            this.wvcb9.TabIndex = 23;
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(19, 290);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(150, 15);
+            this.label37.TabIndex = 11;
+            this.label37.Text = "Средний диаметр  живота";
             // 
-            // wvcb8
+            // label38
             // 
-            this.wvcb8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb8.FormattingEnabled = true;
-            this.wvcb8.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb8.Location = new System.Drawing.Point(228, 220);
-            this.wvcb8.Name = "wvcb8";
-            this.wvcb8.Size = new System.Drawing.Size(158, 23);
-            this.wvcb8.TabIndex = 22;
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(19, 110);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(242, 15);
+            this.label38.TabIndex = 10;
+            this.label38.Text = "Количество основных блюд в течении дня";
             // 
-            // wvcb7
+            // label39
             // 
-            this.wvcb7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb7.FormattingEnabled = true;
-            this.wvcb7.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb7.Location = new System.Drawing.Point(228, 190);
-            this.wvcb7.Name = "wvcb7";
-            this.wvcb7.Size = new System.Drawing.Size(158, 23);
-            this.wvcb7.TabIndex = 21;
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(19, 170);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(101, 15);
+            this.label39.TabIndex = 9;
+            this.label39.Text = "Прием жидкости";
             // 
-            // wvcb6
+            // label41
             // 
-            this.wvcb6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb6.FormattingEnabled = true;
-            this.wvcb6.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb6.Location = new System.Drawing.Point(228, 160);
-            this.wvcb6.Name = "wvcb6";
-            this.wvcb6.Size = new System.Drawing.Size(158, 23);
-            this.wvcb6.TabIndex = 20;
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(19, 230);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(211, 15);
+            this.label41.TabIndex = 7;
+            this.label41.Text = "Собственная оценка статуса питания";
             // 
-            // wvcb5
+            // label43
             // 
-            this.wvcb5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb5.FormattingEnabled = true;
-            this.wvcb5.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb5.Location = new System.Drawing.Point(228, 130);
-            this.wvcb5.Name = "wvcb5";
-            this.wvcb5.Size = new System.Drawing.Size(158, 23);
-            this.wvcb5.TabIndex = 19;
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(19, 320);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(139, 15);
+            this.label43.TabIndex = 5;
+            this.label43.Text = "Средний диаметр бедер";
             // 
-            // wvcb4
+            // label44
             // 
-            this.wvcb4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb4.FormattingEnabled = true;
-            this.wvcb4.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb4.Location = new System.Drawing.Point(228, 102);
-            this.wvcb4.Name = "wvcb4";
-            this.wvcb4.Size = new System.Drawing.Size(158, 23);
-            this.wvcb4.TabIndex = 18;
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(19, 260);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(233, 15);
+            this.label44.TabIndex = 4;
+            this.label44.Text = "Собственная оценка состояния здоровья";
             // 
-            // wvcb3
+            // label45
             // 
-            this.wvcb3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb3.FormattingEnabled = true;
-            this.wvcb3.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb3.Location = new System.Drawing.Point(228, 72);
-            this.wvcb3.Name = "wvcb3";
-            this.wvcb3.Size = new System.Drawing.Size(158, 23);
-            this.wvcb3.TabIndex = 17;
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(19, 140);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(87, 15);
+            this.label45.TabIndex = 3;
+            this.label45.Text = "Прием белков";
             // 
-            // wvcb2
+            // label46
             // 
-            this.wvcb2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb2.FormattingEnabled = true;
-            this.wvcb2.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb2.Location = new System.Drawing.Point(228, 42);
-            this.wvcb2.Name = "wvcb2";
-            this.wvcb2.Size = new System.Drawing.Size(158, 23);
-            this.wvcb2.TabIndex = 16;
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(19, 80);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(122, 15);
+            this.label46.TabIndex = 2;
+            this.label46.Text = "Наличие пролежней";
             // 
-            // wvcb1
+            // label47
             // 
-            this.wvcb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wvcb1.FormattingEnabled = true;
-            this.wvcb1.Items.AddRange(new object[] {
-            "Грубое нарушение",
-            "Умеренное нарушение",
-            "Норма"});
-            this.wvcb1.Location = new System.Drawing.Point(228, 12);
-            this.wvcb1.Name = "wvcb1";
-            this.wvcb1.Size = new System.Drawing.Size(158, 23);
-            this.wvcb1.TabIndex = 15;
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(19, 50);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(243, 15);
+            this.label47.TabIndex = 1;
+            this.label47.Text = "Прием свыше трех препаратов ежедневно";
             // 
-            // wv7
+            // label48
             // 
-            this.wv7.AutoSize = true;
-            this.wv7.Location = new System.Drawing.Point(19, 200);
-            this.wv7.Name = "wv7";
-            this.wv7.Size = new System.Drawing.Size(147, 15);
-            this.wv7.TabIndex = 13;
-            this.wv7.Text = "Устойчивость при хотьбе";
-            // 
-            // wv12
-            // 
-            this.wv12.AutoSize = true;
-            this.wv12.Location = new System.Drawing.Point(19, 350);
-            this.wv12.Name = "wv12";
-            this.wv12.Size = new System.Drawing.Size(165, 15);
-            this.wv12.TabIndex = 12;
-            this.wv12.Text = "Высота шага для левой ноги";
-            // 
-            // wv10
-            // 
-            this.wv10.AutoSize = true;
-            this.wv10.Location = new System.Drawing.Point(19, 290);
-            this.wv10.Name = "wv10";
-            this.wv10.Size = new System.Drawing.Size(209, 15);
-            this.wv10.TabIndex = 11;
-            this.wv10.Text = "Произвольное уведичение скорости";
-            // 
-            // wv4
-            // 
-            this.wv4.AutoSize = true;
-            this.wv4.Location = new System.Drawing.Point(19, 110);
-            this.wv4.Name = "wv4";
-            this.wv4.Size = new System.Drawing.Size(138, 15);
-            this.wv4.TabIndex = 10;
-            this.wv4.Text = "Длина шага левой ноги";
-            // 
-            // wv6
-            // 
-            this.wv6.AutoSize = true;
-            this.wv6.Location = new System.Drawing.Point(19, 170);
-            this.wv6.Name = "wv6";
-            this.wv6.Size = new System.Drawing.Size(184, 15);
-            this.wv6.TabIndex = 9;
-            this.wv6.Text = "Отклонение от линии движения";
-            // 
-            // wv8
-            // 
-            this.wv8.AutoSize = true;
-            this.wv8.Location = new System.Drawing.Point(19, 230);
-            this.wv8.Name = "wv8";
-            this.wv8.Size = new System.Drawing.Size(185, 15);
-            this.wv8.TabIndex = 7;
-            this.wv8.Text = "Степень покачивания туловища";
-            // 
-            // wv11
-            // 
-            this.wv11.AutoSize = true;
-            this.wv11.Location = new System.Drawing.Point(19, 320);
-            this.wv11.Name = "wv11";
-            this.wv11.Size = new System.Drawing.Size(172, 15);
-            this.wv11.TabIndex = 5;
-            this.wv11.Text = "Высота шага для правой ноги";
-            // 
-            // wv9
-            // 
-            this.wv9.AutoSize = true;
-            this.wv9.Location = new System.Drawing.Point(19, 260);
-            this.wv9.Name = "wv9";
-            this.wv9.Size = new System.Drawing.Size(64, 15);
-            this.wv9.TabIndex = 4;
-            this.wv9.Text = "Повороты";
-            // 
-            // wv5
-            // 
-            this.wv5.AutoSize = true;
-            this.wv5.Location = new System.Drawing.Point(19, 140);
-            this.wv5.Name = "wv5";
-            this.wv5.Size = new System.Drawing.Size(145, 15);
-            this.wv5.TabIndex = 3;
-            this.wv5.Text = "Длина шага правой ноги";
-            // 
-            // wv3
-            // 
-            this.wv3.AutoSize = true;
-            this.wv3.Location = new System.Drawing.Point(19, 80);
-            this.wv3.Name = "wv3";
-            this.wv3.Size = new System.Drawing.Size(138, 15);
-            this.wv3.TabIndex = 2;
-            this.wv3.Text = "Непрерывность хотьбы";
-            // 
-            // wv2
-            // 
-            this.wv2.AutoSize = true;
-            this.wv2.Location = new System.Drawing.Point(19, 50);
-            this.wv2.Name = "wv2";
-            this.wv2.Size = new System.Drawing.Size(134, 15);
-            this.wv2.TabIndex = 1;
-            this.wv2.Text = "Симметричность шага";
-            // 
-            // wv1
-            // 
-            this.wv1.AutoSize = true;
-            this.wv1.Location = new System.Drawing.Point(19, 20);
-            this.wv1.Name = "wv1";
-            this.wv1.Size = new System.Drawing.Size(106, 15);
-            this.wv1.TabIndex = 0;
-            this.wv1.Text = "Начало движения";
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(19, 20);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(109, 15);
+            this.label48.TabIndex = 0;
+            this.label48.Text = "Проживание дома";
             // 
             // ORButton
             // 
@@ -2274,27 +2272,29 @@ namespace Geriatric_Status
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1116, 647);
+            this.ClientSize = new System.Drawing.Size(1111, 804);
+            this.Controls.Add(this.MalnutriciaPart1);
+            this.Controls.Add(this.MalnutriciaPart2);
             this.Controls.Add(this.M2Button);
-            this.Controls.Add(this.OverallResilience);
             this.Controls.Add(this.WalkViolation);
             this.Controls.Add(this.Mbutton);
             this.Controls.Add(this.WVButton);
             this.Controls.Add(this.ORButton);
             this.Controls.Add(this.patientDataLabel);
             this.Controls.Add(this.NewPatientButton);
+            this.Controls.Add(this.OverallResilience);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Прогнозирование гериатрического статуса у пациентов с катарактой и глаукомой";
             this.Load += new System.EventHandler(this.Main_Load);
             this.OverallResilience.ResumeLayout(false);
             this.OverallResilience.PerformLayout();
-            this.MalnutriciaPart2.ResumeLayout(false);
-            this.MalnutriciaPart2.PerformLayout();
             this.WalkViolation.ResumeLayout(false);
             this.WalkViolation.PerformLayout();
             this.MalnutriciaPart1.ResumeLayout(false);
             this.MalnutriciaPart1.PerformLayout();
+            this.MalnutriciaPart2.ResumeLayout(false);
+            this.MalnutriciaPart2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
