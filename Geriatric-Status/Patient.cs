@@ -36,15 +36,17 @@ namespace Geriatric_Status
 
         private bool malnutrition2Passed = false;
 
-        private double malnutritionSum;
+        private double malnutritionSum; //Сумма баллов тестов мальнутриции
 
-        private byte malnutrition;
+        private byte malnutrition; //Резудьтат тестов мальнутриции
 
-        private int cognitiveBal;
+        private int cognitiveBal; //Баллы за тест когнитивности
 
-        private bool cognitivePassed;
+        private bool cognitivePassed; 
 
-        private byte congnitive;
+        private byte congnitive; //Результат теста когнитивности
+
+        private double status; //Итоговый расчет статуса;
 
 
         public DateTime BirthDate { get => birthDate; set => birthDate = value; }
@@ -66,5 +68,6 @@ namespace Geriatric_Status
         public int CognitiveBal { get => cognitiveBal; set => cognitiveBal = value; }
         public bool CognitivePassed { get => cognitivePassed; set => cognitivePassed = value; }
         public byte Congnitive { get => congnitive; set => congnitive = value; }
+        public double Status { get => status; set => status = value; }
     }
 }

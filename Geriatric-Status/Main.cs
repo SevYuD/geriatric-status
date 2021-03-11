@@ -346,5 +346,19 @@ namespace Geriatric_Status
                 MessageBox.Show("Не все параметры выбраны!");
             }
         }
+
+        private void AButton_Click(object sender, EventArgs e)
+        {
+            if (Program.patient.CognitivePassed && Program.patient.Malnutrition1Passed
+                && Program.patient.Malnutrition2Passed &&
+                Program.patient.OverallResiliencePassed && Program.patient.WalkViolationPassed)
+            {
+                Analize analize = new Analize();
+                analize.ShowDialog();
+            }
+            else
+                MessageBox.Show("Не все тесты выполнены!");
+                   
+        }
     }
 }

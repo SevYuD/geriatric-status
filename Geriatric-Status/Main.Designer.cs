@@ -173,7 +173,7 @@ namespace Geriatric_Status
             this.label33 = new System.Windows.Forms.Label();
             this.M2Button = new System.Windows.Forms.Button();
             this.CButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AButton = new System.Windows.Forms.Button();
             this.OverallResilience.SuspendLayout();
             this.Cognitive.SuspendLayout();
             this.MalnutriciaPart2.SuspendLayout();
@@ -183,7 +183,7 @@ namespace Geriatric_Status
             // 
             // NewPatientButton
             // 
-            this.NewPatientButton.Location = new System.Drawing.Point(257, 24);
+            this.NewPatientButton.Location = new System.Drawing.Point(313, 27);
             this.NewPatientButton.Name = "NewPatientButton";
             this.NewPatientButton.Size = new System.Drawing.Size(75, 23);
             this.NewPatientButton.TabIndex = 1;
@@ -1797,21 +1797,22 @@ namespace Geriatric_Status
             this.CButton.UseVisualStyleBackColor = true;
             this.CButton.Click += new System.EventHandler(this.CButton_Click);
             // 
-            // button1
+            // AButton
             // 
-            this.button1.Location = new System.Drawing.Point(21, 404);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 23);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AButton.Location = new System.Drawing.Point(21, 510);
+            this.AButton.Name = "AButton";
+            this.AButton.Size = new System.Drawing.Size(350, 72);
+            this.AButton.TabIndex = 36;
+            this.AButton.Text = "Анализ";
+            this.AButton.UseVisualStyleBackColor = true;
+            this.AButton.Click += new System.EventHandler(this.AButton_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1147, 835);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AButton);
             this.Controls.Add(this.OverallResilience);
             this.Controls.Add(this.Cognitive);
             this.Controls.Add(this.MalnutriciaPart2);
@@ -1820,10 +1821,10 @@ namespace Geriatric_Status
             this.Controls.Add(this.Mbutton);
             this.Controls.Add(this.WVButton);
             this.Controls.Add(this.ORButton);
-            this.Controls.Add(this.patientDataLabel);
             this.Controls.Add(this.NewPatientButton);
             this.Controls.Add(this.MalnutriciaPart1);
             this.Controls.Add(this.WalkViolation);
+            this.Controls.Add(this.patientDataLabel);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Прогнозирование гериатрического статуса у пациентов с катарактой и глаукомой";
@@ -1988,7 +1989,7 @@ namespace Geriatric_Status
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Button CButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AButton;
     }
 }
 
