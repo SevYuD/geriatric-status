@@ -21,7 +21,7 @@ namespace Geriatric_Status
         {
             Program.patient.Status = -21.583 - 8.427 * Program.patient.MotorActivity
                 - 3.684 * Program.patient.Congnitive - 0.915 * Program.patient.Malnutrition;
-
+            Program.patient.Status = Math.Round(Program.patient.Status, 5);
             GSLabel.Text = Program.patient.Status.ToString();
         }
 
@@ -33,17 +33,38 @@ namespace Geriatric_Status
         private void RButton_Click(object sender, EventArgs e)
         {
             Patient p = Program.patient;
+            String ma;
+            String ml;
+            String co;
+            if (Program.patient.MotorActivity == 0)
+                ma = "Норма";
+            else
+                ma = "Нарушение!";
+
+            if (Program.patient.Malnutrition == 0)
+                ml = "Норма";
+            else
+                ml = "Нарушение!";
+
+            if (Program.patient.Congnitive == 0)
+                co = "Норма";
+            else
+                co = "Нарушение!";
+
+
             string report = $@"
-Пациент:  {p.Surname} {p.Name} {p.Otchestvo} {p.BirthDate.ToShortDateString()}
+Пациент:  Фамилия: {p.Surname} Имя: {p.Name} Отчество: {p.Otchestvo} Пол: {p.Gender}  Дата рождения: {p.BirthDate.ToShortDateString()}
 
-
-Определение общей устойчивости: {p.OverallResilience} б.
+Определение общей устойчивости: {p.OverallResilience} б. 
 Состояние походки: {p.WalkViolation} б.
-Степень способности к передвижению: {p.MotorActivitySum} б.
+Степень способности к передвижению: {p.MotorActivitySum} б. 
+Оценка: {ma}
 
-Оценка риска развития синдрома мальнутриции: {p.Malnutrition} б.
+Оценка риска развития синдрома мальнутриции: {p.MalnutritionSum} б. (Тест 1: {p.Malnutrition1}, Тест 2: {p.Malnutrition2})
+Оценка: {ml}
 
 Оценка когнитивных способностей: {p.CognitiveBal} б.
+Оценка: {co}
 
 Гериатрический статус: {p.Status} 
 ";

@@ -46,8 +46,11 @@ namespace Geriatric_Status
 
         private byte congnitive; //Результат теста когнитивности
 
-        private double status; //Итоговый расчет статуса;
+        private double status; //Итоговый расчет статуса
 
+        private bool reflesh = false; //Нужно для проверки и обновления форм
+
+        private string gender; //Пол
 
         public DateTime BirthDate { get => birthDate; set => birthDate = value; }
         public string Name { get => name; set => name = value; }
@@ -69,5 +72,7 @@ namespace Geriatric_Status
         public bool CognitivePassed { get => cognitivePassed; set => cognitivePassed = value; }
         public byte Congnitive { get => congnitive; set => congnitive = value; }
         public double Status { get => status; set => status = value; }
+        public bool Reflesh { get => reflesh; set => reflesh = value; }
+        public string Gender { get => gender; set => gender = value; }
     }
 }

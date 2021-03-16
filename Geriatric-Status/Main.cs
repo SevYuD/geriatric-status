@@ -16,6 +16,7 @@ namespace Geriatric_Status
         public Main()
         {
             InitializeComponent();
+            this.Size = new Size(1100, 700);
         }
 
         //Проверка оценок устойчивости и хотьбы на заполненность
@@ -26,10 +27,10 @@ namespace Geriatric_Status
                 Program.patient.MotorActivitySum = Program.patient.WalkViolation + Program.patient.OverallResilience;
                 MessageBox.Show("Оценка двигательной активности: " + Program.patient.MotorActivitySum + " баллов");
                 //Уточнить
-                if (Program.patient.MotorActivitySum > 38)
-                    Program.patient.MotorActivity = 1;
-                else
+                if (Program.patient.MotorActivitySum >= 38)
                     Program.patient.MotorActivity = 0;
+                else
+                    Program.patient.MotorActivity = 1;
             }
         }
 
@@ -40,10 +41,10 @@ namespace Geriatric_Status
                 Program.patient.MalnutritionSum = Program.patient.Malnutrition1 + Program.patient.Malnutrition2;
                 MessageBox.Show("Оценка риска развития синдрома мальнутриции: " + Program.patient.MalnutritionSum + " баллов");
                 //Уточнить
-                if (Program.patient.MalnutritionSum > 23)
-                    Program.patient.Malnutrition = 1;
-                else
+                if (Program.patient.MalnutritionSum >= 23)
                     Program.patient.Malnutrition = 0;
+                else
+                    Program.patient.Malnutrition = 1;
             }
         }
 
@@ -52,19 +53,18 @@ namespace Geriatric_Status
           
             MessageBox.Show("Оценка когнитивных способностей: " + Program.patient.CognitiveBal + " баллов");
             //Уточнить
-            if (Program.patient.CognitiveBal > 24)
-                Program.patient.Congnitive = 1;
-            else
+            if (Program.patient.CognitiveBal >= 24)
                 Program.patient.Congnitive = 0;
+            else
+                Program.patient.Congnitive = 1;
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
             NewPatient np = new NewPatient();
             np.ShowDialog();
+            Program.patient.Reflesh = false;
             patientDataLabel.Text = Program.patient.Surname + " " + Program.patient.Name + " " + Program.patient.Otchestvo + " " + Program.patient.BirthDate.ToShortDateString();
-
-            
             //Изначально все лайоуты скрыты
             OverallResilience.Hide();
             WalkViolation.Hide();
@@ -79,15 +79,92 @@ namespace Geriatric_Status
             NewPatient np = new NewPatient();
             np.ShowDialog();
             patientDataLabel.Text = Program.patient.Surname + " " + Program.patient.Name + " " + Program.patient.Otchestvo + " " + Program.patient.BirthDate.ToShortDateString();
+            if (Program.patient.Reflesh)
+            {
+                s1.Text = null;
+                s2.Text = null;
+                s3.Text = null;
+                s4.Text = null;
+                s5.Text = null;
+                orcb1.SelectedIndex = -1;
+                orcb2.SelectedIndex = -1;
+                orcb3.SelectedIndex = -1;
+                orcb4.SelectedIndex = -1;
+                orcb5.SelectedIndex = -1;
+                orcb6.SelectedIndex = -1;
+                orcb7.SelectedIndex = -1;
+                orcb8.SelectedIndex = -1;
+                orcb9.SelectedIndex = -1;
+                orcb10.SelectedIndex = -1;
+                orcb11.SelectedIndex = -1;
+                orcb12.SelectedIndex = -1;
+                orcb13.SelectedIndex = -1;
+                orcb14.SelectedIndex = -1;
+                orcb15.SelectedIndex = -1;
+                OverallResilience.Hide();
+
+                wvcb12.SelectedIndex = -1;
+                wvcb11.SelectedIndex = -1;
+                wvcb10.SelectedIndex = -1;
+                wvcb9.SelectedIndex = -1;
+                wvcb8.SelectedIndex = -1;
+                wvcb7.SelectedIndex = -1;
+                wvcb6.SelectedIndex = -1;
+                wvcb5.SelectedIndex = -1;
+                wvcb4.SelectedIndex = -1;
+                wvcb3.SelectedIndex = -1;
+                wvcb2.SelectedIndex = -1;
+                wvcb1.SelectedIndex = -1;
+                WalkViolation.Hide();
+
+                mcb6.SelectedIndex = -1;
+                mcb5.SelectedIndex = -1;
+                mcb4.SelectedIndex = -1;
+                mcb3.SelectedIndex = -1;
+                mcb2.SelectedIndex = -1;
+                mcb1.SelectedIndex = -1;
+                MalnutriciaPart1.Hide();
+
+                m2cb12.SelectedIndex = -1;
+                m2cb11.SelectedIndex = -1;
+                m2cb10.SelectedIndex = -1;
+                m2cb9.SelectedIndex = -1;
+                m2cb8.SelectedIndex = -1;
+                m2cb7.SelectedIndex = -1;
+                m2cb6.SelectedIndex = -1;
+                m2cb5.SelectedIndex = -1;
+                m2cb4.SelectedIndex = -1;
+                m2cb3.SelectedIndex = -1;
+                m2cb2.SelectedIndex = -1;
+                m2cb1.SelectedIndex = -1;
+                MalnutriciaPart2.Hide();
+
+                ccb1.SelectedIndex = -1;
+                ccb2.SelectedIndex = -1;
+                ccb3.SelectedIndex = -1;
+                ccb4.SelectedIndex = -1;
+                ccb5.SelectedIndex = -1;
+                ccb6.SelectedIndex = -1;
+                ccb7.SelectedIndex = -1;
+                ccb8.SelectedIndex = -1;
+                ccb9.SelectedIndex = -1;
+                ccb10.SelectedIndex = -1;
+                ccb11.SelectedIndex = -1;
+                Cognitive.Hide();
+
+
+                Program.patient.Reflesh = false;
+            }
+            
         }
 
         private void ORButton_Click(object sender, EventArgs e)
         {
-            //Проверка, чтобы лайоут не открывался повторно
-            if (OverallResilience.Visible == false)
-            {
-                OverallResilience.Show();
-            }
+            OverallResilience.Show();
+            WalkViolation.Hide();
+            MalnutriciaPart1.Hide();
+            MalnutriciaPart2.Hide();
+            Cognitive.Hide();
         }
 
         //Расчет устойчивости
@@ -132,6 +209,7 @@ namespace Geriatric_Status
                 Program.patient.OverallResiliencePassed = true;
                 MessageBox.Show("Набрано баллов: " + Program.patient.OverallResilience);
                 checkMotorActivity();
+                s1.Text = Program.patient.OverallResilience.ToString();
             }
             else
             {
@@ -141,10 +219,11 @@ namespace Geriatric_Status
 
         private void WVButton_Click(object sender, EventArgs e)
         {
-            if (WalkViolation.Visible == false)
-            {
-                WalkViolation.Show();
-            }
+            OverallResilience.Hide();
+            WalkViolation.Show();
+            MalnutriciaPart1.Hide();
+            MalnutriciaPart2.Hide();
+            Cognitive.Hide();
         }
 
         //Двигательная активность
@@ -181,7 +260,7 @@ namespace Geriatric_Status
                 Program.patient.WalkViolationPassed = true;
          
                 MessageBox.Show("Набрано баллов: " + Program.patient.WalkViolation);
-
+                s2.Text = Program.patient.WalkViolation.ToString();
                 checkMotorActivity();
             }
             else
@@ -192,10 +271,11 @@ namespace Geriatric_Status
 
         private void Mbutton_Click(object sender, EventArgs e)
         {
-            if (MalnutriciaPart1.Visible == false)
-            {
-                MalnutriciaPart1.Show();
-            }
+            OverallResilience.Hide();
+            WalkViolation.Hide();
+            MalnutriciaPart1.Show();
+            MalnutriciaPart2.Hide();
+            Cognitive.Hide();
         }
 
         //Мальнутриции 1
@@ -226,7 +306,7 @@ namespace Geriatric_Status
                 MessageBox.Show("Набрано баллов: " + Program.patient.Malnutrition1);
 
                 Program.patient.Malnutrition1Passed = true;
-
+                s3.Text = Program.patient.Malnutrition1.ToString();
                 checkMalnutrition();
             }
             else
@@ -237,8 +317,11 @@ namespace Geriatric_Status
 
         private void M2Button_Click(object sender, EventArgs e)
         {
-            if (MalnutriciaPart2.Visible == false)
-                MalnutriciaPart2.Show();
+            OverallResilience.Hide();
+            WalkViolation.Hide();
+            MalnutriciaPart1.Hide();
+            MalnutriciaPart2.Show();
+            Cognitive.Hide();
         }
 
         //Мальнутриции 2
@@ -289,7 +372,7 @@ namespace Geriatric_Status
                 Program.patient.Malnutrition2Passed = true;
 
                 MessageBox.Show("Набрано баллов: " + Program.patient.Malnutrition2);
-
+                s4.Text = Program.patient.Malnutrition2.ToString();
                 checkMalnutrition();
             }
             else
@@ -300,8 +383,11 @@ namespace Geriatric_Status
 
         private void CButton_Click(object sender, EventArgs e)
         {
-            if (Cognitive.Visible == false)
-                Cognitive.Show();
+            OverallResilience.Hide();
+            WalkViolation.Hide();
+            MalnutriciaPart1.Hide();
+            MalnutriciaPart2.Hide();
+            Cognitive.Show();
         }
 
         private void CSaveButton_Click(object sender, EventArgs e)
@@ -338,7 +424,7 @@ namespace Geriatric_Status
                     Program.patient.CognitiveBal = 33;
 
                 Program.patient.CognitivePassed = true;
-
+                s5.Text = Program.patient.CognitiveBal.ToString();
                 checkCognitive();
             }
             else

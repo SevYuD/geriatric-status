@@ -22,7 +22,7 @@ namespace Geriatric_Status
         private void SaveButton_Click(object sender, EventArgs e)
         {
             //Проверяем чтобы данные были не пустые
-            if (FTextBox.Text == "" && NTextBox.Text == "" && OTextBox.Text == "")
+            if (FTextBox.Text == "" && NTextBox.Text == "" && OTextBox.Text == "" && comboBox1.SelectedIndex > -1)
             {
                 MessageBox.Show("Пустые поля!");
             }
@@ -34,11 +34,17 @@ namespace Geriatric_Status
                 Program.patient.Surname = FTextBox.Text;
                 Program.patient.Otchestvo = FTextBox.Text;
                 Program.patient.BirthDate = dateTimePicker1.Value;
+                Program.patient.Reflesh = true;
+                if (comboBox1.SelectedIndex == 0)
+                    Program.patient.Gender = "Мужской";
+                else
+                    Program.patient.Gender = "Женский";
                 this.Close();
-
+              
             }
         }
 
+        
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -174,6 +174,11 @@ namespace Geriatric_Status
             this.M2Button = new System.Windows.Forms.Button();
             this.CButton = new System.Windows.Forms.Button();
             this.AButton = new System.Windows.Forms.Button();
+            this.s1 = new System.Windows.Forms.Label();
+            this.s2 = new System.Windows.Forms.Label();
+            this.s3 = new System.Windows.Forms.Label();
+            this.s4 = new System.Windows.Forms.Label();
+            this.s5 = new System.Windows.Forms.Label();
             this.OverallResilience.SuspendLayout();
             this.Cognitive.SuspendLayout();
             this.MalnutriciaPart2.SuspendLayout();
@@ -1807,11 +1812,56 @@ namespace Geriatric_Status
             this.AButton.UseVisualStyleBackColor = true;
             this.AButton.Click += new System.EventHandler(this.AButton_Click);
             // 
+            // s1
+            // 
+            this.s1.AutoSize = true;
+            this.s1.Location = new System.Drawing.Point(379, 173);
+            this.s1.Name = "s1";
+            this.s1.Size = new System.Drawing.Size(0, 15);
+            this.s1.TabIndex = 37;
+            // 
+            // s2
+            // 
+            this.s2.AutoSize = true;
+            this.s2.Location = new System.Drawing.Point(379, 222);
+            this.s2.Name = "s2";
+            this.s2.Size = new System.Drawing.Size(0, 15);
+            this.s2.TabIndex = 38;
+            // 
+            // s3
+            // 
+            this.s3.AutoSize = true;
+            this.s3.Location = new System.Drawing.Point(379, 273);
+            this.s3.Name = "s3";
+            this.s3.Size = new System.Drawing.Size(0, 15);
+            this.s3.TabIndex = 39;
+            // 
+            // s4
+            // 
+            this.s4.AutoSize = true;
+            this.s4.Location = new System.Drawing.Point(379, 322);
+            this.s4.Name = "s4";
+            this.s4.Size = new System.Drawing.Size(0, 15);
+            this.s4.TabIndex = 40;
+            // 
+            // s5
+            // 
+            this.s5.AutoSize = true;
+            this.s5.Location = new System.Drawing.Point(379, 368);
+            this.s5.Name = "s5";
+            this.s5.Size = new System.Drawing.Size(0, 15);
+            this.s5.TabIndex = 41;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1147, 835);
+            this.Controls.Add(this.s5);
+            this.Controls.Add(this.s4);
+            this.Controls.Add(this.s3);
+            this.Controls.Add(this.s2);
+            this.Controls.Add(this.s1);
             this.Controls.Add(this.AButton);
             this.Controls.Add(this.OverallResilience);
             this.Controls.Add(this.Cognitive);
@@ -1990,6 +2040,11 @@ namespace Geriatric_Status
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Button CButton;
         private System.Windows.Forms.Button AButton;
+        private System.Windows.Forms.Label s1;
+        private System.Windows.Forms.Label s2;
+        private System.Windows.Forms.Label s3;
+        private System.Windows.Forms.Label s4;
+        private System.Windows.Forms.Label s5;
     }
 }
 
