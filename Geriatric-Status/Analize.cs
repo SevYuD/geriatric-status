@@ -19,8 +19,8 @@ namespace Geriatric_Status
 
         private void Analize_Load(object sender, EventArgs e)
         {
-            Program.patient.Status = -21.583 - 8.427 * Program.patient.MotorActivity
-                - 3.684 * Program.patient.Congnitive - 0.915 * Program.patient.Malnutrition;
+            Program.patient.Status = -21.583 - 8.427 * Program.patient.MotorActivitySum
+                - 3.684 * Program.patient.CognitiveBal - 0.915 * Program.patient.MalnutritionSum;
             Program.patient.Status = Math.Round(Program.patient.Status, 5);
             GSLabel.Text = Program.patient.Status.ToString();
         }
@@ -32,24 +32,36 @@ namespace Geriatric_Status
 
         private void RButton_Click(object sender, EventArgs e)
         {
+
             Patient p = Program.patient;
             String ma;
             String ml;
             String co;
-            if (Program.patient.MotorActivity == 0)
+            if (Program.patient.MotorActivitySum >= 0 && Program.patient.MotorActivitySum <= 20)
+                ma = "Значительная степень нарушений";
+            else if (Program.patient.MotorActivitySum >= 21 && Program.patient.MotorActivitySum <= 33)
+                ma = "Умеренная степень нарушений";
+            else if (Program.patient.MotorActivitySum >= 34 && Program.patient.MotorActivitySum <= 38)
+                ma = "Легкая степень нарушений";
+            else
                 ma = "Норма";
-            else
-                ma = "Нарушение!";
 
-            if (Program.patient.Malnutrition == 0)
+            if (Program.patient.MalnutritionSum >= 24)
                 ml = "Норма";
+            else if (Program.patient.MalnutritionSum >= 17 && Program.patient.MalnutritionSum < 24)
+                ml = "Hаличие риска развития синдрома мальнутриции";
             else
-                ml = "Нарушение!";
+                ml = "Hаличие синдрома мальнутриции";
 
-            if (Program.patient.Congnitive == 0)
+
+            if (Program.patient.CognitiveBal >= 25)
                 co = "Норма";
+            else if (Program.patient.CognitiveBal >= 21 && Program.patient.CognitiveBal <= 24)
+                co = "Легкие нарушения когнитивной сферы";
+            else if (Program.patient.CognitiveBal >= 10 && Program.patient.CognitiveBal <= 21)
+                co = "Умеренные нарушения когнитивной сферы";
             else
-                co = "Нарушение!";
+                co = "Тяжелые нарушения когнитивной сферы";
 
 
             string report = $@"
@@ -66,12 +78,13 @@ namespace Geriatric_Status
 Оценка когнитивных способностей: {p.CognitiveBal} б.
 Оценка: {co}
 
-Гериатрический статус: {p.Status} 
+Прогноз ГС: {p.Status} 
 ";
 
 
             //Сохранение файла
             SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.FileName = p.Surname;
             saveFileDialog.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
             if (saveFileDialog.ShowDialog() == DialogResult.Cancel)
                 return;

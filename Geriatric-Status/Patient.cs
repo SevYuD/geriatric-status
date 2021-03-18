@@ -26,8 +26,6 @@ namespace Geriatric_Status
 
         private int motorActivitySum; //Сумма баллов оценок устойчивости и хотьбы
 
-        private byte motorActivity; // Результат теста оценок устойчивости и хотьбы
-
         private int malnutrition1; // Результат оценки риска развития синдрома мальнутриции 1 часть
 
         private bool malnutrition1Passed = false;
@@ -38,13 +36,9 @@ namespace Geriatric_Status
 
         private double malnutritionSum; //Сумма баллов тестов мальнутриции
 
-        private byte malnutrition; //Резудьтат тестов мальнутриции
-
         private int cognitiveBal; //Баллы за тест когнитивности
 
         private bool cognitivePassed; 
-
-        private byte congnitive; //Результат теста когнитивности
 
         private double status; //Итоговый расчет статуса
 
@@ -60,17 +54,14 @@ namespace Geriatric_Status
         public int WalkViolation { get => walkViolation; set => walkViolation = value; }
         public bool WalkViolationPassed { get => walkViolationPassed; set => walkViolationPassed = value; }
         public bool OverallResiliencePassed { get => overallResiliencePassed; set => overallResiliencePassed = value; }
-        public byte MotorActivity { get => motorActivity; set => motorActivity = value; }
         public int MotorActivitySum { get => motorActivitySum; set => motorActivitySum = value; }
         public int Malnutrition1 { get => malnutrition1; set => malnutrition1 = value; }
         public bool Malnutrition1Passed { get => malnutrition1Passed; set => malnutrition1Passed = value; }
         public double Malnutrition2 { get => malnutrition2; set => malnutrition2 = value; }
         public bool Malnutrition2Passed { get => malnutrition2Passed; set => malnutrition2Passed = value; }
         public double MalnutritionSum { get => malnutritionSum; set => malnutritionSum = value; }
-        public byte Malnutrition { get => malnutrition; set => malnutrition = value; }
         public int CognitiveBal { get => cognitiveBal; set => cognitiveBal = value; }
         public bool CognitivePassed { get => cognitivePassed; set => cognitivePassed = value; }
-        public byte Congnitive { get => congnitive; set => congnitive = value; }
         public double Status { get => status; set => status = value; }
         public bool Reflesh { get => reflesh; set => reflesh = value; }
         public string Gender { get => gender; set => gender = value; }

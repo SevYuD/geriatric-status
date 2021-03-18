@@ -42,7 +42,7 @@ namespace Geriatric_Status
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Гериатрический статус";
+            this.label1.Text = "Прогноз ГС:";
             // 
             // GSLabel
             // 

@@ -26,11 +26,6 @@ namespace Geriatric_Status
             {
                 Program.patient.MotorActivitySum = Program.patient.WalkViolation + Program.patient.OverallResilience;
                 MessageBox.Show("Оценка двигательной активности: " + Program.patient.MotorActivitySum + " баллов");
-                //Уточнить
-                if (Program.patient.MotorActivitySum >= 38)
-                    Program.patient.MotorActivity = 0;
-                else
-                    Program.patient.MotorActivity = 1;
             }
         }
 
@@ -40,23 +35,12 @@ namespace Geriatric_Status
             {
                 Program.patient.MalnutritionSum = Program.patient.Malnutrition1 + Program.patient.Malnutrition2;
                 MessageBox.Show("Оценка риска развития синдрома мальнутриции: " + Program.patient.MalnutritionSum + " баллов");
-                //Уточнить
-                if (Program.patient.MalnutritionSum >= 23)
-                    Program.patient.Malnutrition = 0;
-                else
-                    Program.patient.Malnutrition = 1;
             }
         }
 
         private void checkCognitive()
-        {
-          
+        {      
             MessageBox.Show("Оценка когнитивных способностей: " + Program.patient.CognitiveBal + " баллов");
-            //Уточнить
-            if (Program.patient.CognitiveBal >= 24)
-                Program.patient.Congnitive = 0;
-            else
-                Program.patient.Congnitive = 1;
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -207,6 +191,7 @@ namespace Geriatric_Status
                     orcb14.SelectedIndex +
                     orcb15.SelectedIndex;
                 Program.patient.OverallResiliencePassed = true;
+                if (Program.patient.OverallResilience > 24) Program.patient.OverallResilience = 24;
                 MessageBox.Show("Набрано баллов: " + Program.patient.OverallResilience);
                 checkMotorActivity();
                 s1.Text = Program.patient.OverallResilience.ToString();
@@ -258,7 +243,7 @@ namespace Geriatric_Status
                     wvcb2.SelectedIndex +
                     wvcb1.SelectedIndex;
                 Program.patient.WalkViolationPassed = true;
-         
+                if (Program.patient.WalkViolation > 16) Program.patient.WalkViolation = 16;
                 MessageBox.Show("Набрано баллов: " + Program.patient.WalkViolation);
                 s2.Text = Program.patient.WalkViolation.ToString();
                 checkMotorActivity();
